@@ -41,23 +41,11 @@
   transform: scale(1.3);
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 110px;
-  font-weight:100; 
-  letter-spacing: 30px;
-}
-
-h3 {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight:300; 
-  line-height:24px;
-}
+ 
 #space{
   margin: auto;
-  width: 800px; 
-  height: 500px;
+  width:900px; 
+  height:550px;
   transform: perspective 400px;
   transform-origin: 110px 110px; 
 }
@@ -125,4 +113,19 @@ h3 {
     60%      {transform: perspective(400px) rotateY(80deg); }
     80%      {transform: perspective(400px) rotateY(46deg); }
    100%      {transform: perspective(400px) rotateY(46deg) rotateX(-5deg) rotateZ(-5deg); }
+}
+.Timeline{
+   font-size: 1.5em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+  
+}
+section{
+  
+
 }

@@ -27,16 +27,15 @@ function Swap() {
         animation:''
       }} />
 
- 
-
       <div className='balance'>{to}</div>
       <button >Connect Wallet</button>
+      
       <div className="ExchangeRate">
-          <span className="EXC-left "> Exchange rate:&nbsp; </span>
-          <span className="EXC-right"> &nbsp; 1 ETH   =   200000 LBT &#9432; &nbsp; </span>
+          <span className="EXC-left "> Exchange rate: </span>
+          <span className="EXC-right"> 1 ETH   =   200000 LBT &#9432;   </span>
           <br></br>
-          <span className="EXC-Fee"> &nbsp; &nbsp; &nbsp; Swap Fee   =   1000LBT &#9432;</span>
-        </div>
+          <span className="EXC-Fee"> Swap Fee   =   1000LBT &#9432;</span>
+          </div>
     </div>
   )
 }

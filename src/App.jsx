@@ -7,6 +7,8 @@ import Lottery from './components/Lottery/Lottery';
 import Swap from './components/Swap/Swap';
 import Aboutus from './components/About us/AboutUs';
 import Footer from './components/Footer/Footer'
+import Timeline from './components/Timeline/Timeline'
+ 
 function App() {
   const LotteryShow = 1;
   const SwapShow = 2;
@@ -36,16 +38,19 @@ function App() {
            <div class="trif l1"></div>
            <div class="trif l4"></div>
     </div>
+    <div className='Timeline'><Timeline/></div>
  
-</div>
+    </div>
 
       {/* <img className="cryptogif" src={sample} alt="" /> */}
       <div className='main'>
       {show===LotteryShow && <Lottery/>}
       {show===SwapShow && <Swap/>}
       {show===AboutShow&& <Aboutus/>}
-      <Footer/>
-      
+    <br></br>
+    <br></br>
+    {/* <div id="canvas_container"></div> */}
+    
       </div> </div>
       
     </div>

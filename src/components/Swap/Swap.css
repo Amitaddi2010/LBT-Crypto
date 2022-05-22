@@ -2,14 +2,18 @@
     background-color: #385f74;
     background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
     border-radius: 30px;
-    padding: 3rem;
+     
+    padding: 0 .8rem;
     border: 1px double #aacbc7;
     box-shadow: 5px 5px 10px #aacbc7;
     color:white;
-    width: 28rem;
+    max-width: 28rem;
     scroll-behavior: smooth;
-    
+    padding-top: 1 rem;
+    margin: 0 auto;
+   
 }
+
 .swap .balance{
    
     height:150px;
@@ -41,8 +45,10 @@
 .swap svg:hover{
     transform: rotate(270deg);
 }
+
 .ExchangeRate
 { 
-    padding: 3rem;
+    display: flex;
+    gap: 1.4em;
+    padding: 0.6 2rem;
 }
- 
