@@ -8,6 +8,8 @@ import Swap from './components/Swap/Swap';
 import Aboutus from './components/About us/AboutUs';
 import Footer from './components/Footer/Footer'
 import Timeline from './components/Timeline/Timeline'
+import Team from './components/Team/Team'
+ 
  
 function App() {
   const LotteryShow = 1;
@@ -23,8 +25,10 @@ function App() {
         <img className='mainlogo' src={logo} alt =""/>
       </div>
       </>
+      
       {/* <img src={sample} alt="" /> */}
       <Navbar handler={setShow} />
+      <hr/>
       
       <div className='container'>
       <div id="space">
@@ -37,23 +41,33 @@ function App() {
            <div class="ct"></div>
            <div class="trif l1"></div>
            <div class="trif l4"></div>
+            
     </div>
+    <hr  class="hr-1"/>
     <div className='Timeline'><Timeline/></div>
- 
-    </div>
+    <hr/>
+    <Team/>
+    <br></br>
+    <div><Footer/></div> 
+   </div>
+  
+
 
       {/* <img className="cryptogif" src={sample} alt="" /> */}
       <div className='main'>
       {show===LotteryShow && <Lottery/>}
       {show===SwapShow && <Swap/>}
       {show===AboutShow&& <Aboutus/>}
+     
     <br></br>
     <br></br>
-    {/* <div id="canvas_container"></div> */}
     
+    {/* <div id="canvas_container"></div> */}
+   
       </div> </div>
       
     </div>
+    
   );
 }
 

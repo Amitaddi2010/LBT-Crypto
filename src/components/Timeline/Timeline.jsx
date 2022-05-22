@@ -6,7 +6,7 @@ export default function Timeliner() {
     
     <section>
     <div className='timeline'>
-     <h2> Project Timeline </h2>
+     <h2> Timeline </h2>
          <Timeline stories={[
      {
        'title': 'Lottery Block Token ',

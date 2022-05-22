@@ -32,9 +32,9 @@ function Swap() {
       
       <div className="ExchangeRate">
           <span className="EXC-left "> Exchange rate: </span>
-          <span className="EXC-right"> 1 ETH   =   200000 LBT &#9432;   </span>
+          <span className="EXC-right"> 1 ETH :  200000 LBT &#9432;   </span>
           <br></br>
-          <span className="EXC-Fee"> Swap Fee   =   1000LBT &#9432;</span>
+          <span className="EXC-Fee"> Swap Fee :  1000LBT &#9432;</span>
           </div>
     </div>
   )
