@@ -1,91 +1,36 @@
 import React from 'react'
 import './../Team/team.css'
+import T1 from './../../imgs/Team1.png'
+import T2 from './../../imgs/team2.png'
+
 export default function Team() {
   return (
-<div class="Team">
+    
+<div className='Team'>
+  
+<h2 className='h2'>Team</h2>
+<figure className='amit'>
+  <img className='Team1' src={T1}/>
+  <figcaption>
+  <h3>Amit Kumar Saraswat</h3>
+  
+  <p>Blockchain Developer</p>
+   </figcaption>
+   </figure>
 
-<div class="row heading">
-  <div class="col-md-6 col-md-offset-3">
-    <h2 class="text-center bottom-line">Meet Our Team</h2>
-    <p class="subheading text-center">Creative Nerds</p>
-  </div>
+   <figure className='tarun'>
+  <img className='Team1' src={T1}/>
+  <figcaption>
+  <h3>Tarun</h3>
+  
+  <p>Blockchain Developer</p>
+   </figcaption>
+   </figure >
 </div>
-
-<div class="row team-row">
-
-  <div class="col-md-4 col-sm-6 team-wrap">
-    <div class="team-member text-center">
-      <div class="team-img">
-        <img src="http://deothemes.com/envato/enigma/html/img/team_1.jpg" alt=""/>
-        <div class="overlay">
-          <div class="team-details text-center">
-            <p>
-              Our web design team will spend time with our digital marketing team.
-            </p>
-            <div class="socials mt-20">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
-              <a href="#"><i class="fa fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h6 class="team-title">John Marshall</h6>
-      <span>Designer</span>
-    </div>
-  </div>
-   
-
-  <div class="col-md-4 col-sm-6 team-wrap">
-    <div class="team-member text-center">
-      <div class="team-img">
-        <img src="http://deothemes.com/envato/enigma/html/img/team_2.jpg" alt=""/>
-        <div class="overlay">
-          <div class="team-details text-center">
-            <p>
-              Our web design team will spend time with our digital marketing team.
-            </p>
-            <div class="socials mt-20">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
-              <a href="#"><i class="fa fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h6 class="team-title">Steve Roberts</h6>
-      <span>Photographer</span>
-    </div>
-  </div>
-   
-
-  <div class="col-md-4 col-sm-6 team-wrap">
-    <div class="team-member last text-center">
-      <div class="team-img">
-        <img src="http://deothemes.com/envato/enigma/html/img/team_3.jpg" alt=""/>
-        <div class="overlay">
-          <div class="team-details text-center">
-            <p>
-              Our web design team will spend time with our digital marketing team.
-            </p>
-            <div class="socials mt-20">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
-              <a href="#"><i class="fa fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h6 class="team-title">Michael Cartney</h6>
-      <span>Designer</span>
-    </div>
-  </div>
-  </div>
-
-</div>
+ 
+ 
+ 
+ 
   )
 }
 

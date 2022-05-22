@@ -52,3 +52,14 @@
     gap: 1.4em;
     padding: 0.6 2rem;
 }
+.title
+{
+    background-color: #385f74;
+    background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
+    border-radius: 9px;
+     
+    padding: 2 2rem;
+    border: 0px double #aacbc7;
+    box-shadow: 1px 1px 5px #aacbc7;
+    
+}

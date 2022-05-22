@@ -15,3 +15,8 @@
     
 
 }
+.time{
+    background: rgb(99,142,139);
+    background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
+    border-radius: 50px;
+}

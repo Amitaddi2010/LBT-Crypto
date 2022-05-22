@@ -10,7 +10,7 @@ function Swap() {
 
   return (
     <div className='content swap'>
-      <h2>Swap</h2>
+      <h2 className='title'>Swap</h2>
        
       <div className='balance'>{from}</div>
       <AiOutlineSwap onClick={() => {     

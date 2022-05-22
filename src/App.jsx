@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import sample from './imgs/sample.png'
 import logo from './imgs/logo.png'
 import { useState } from 'react';
 import Lottery from './components/Lottery/Lottery';
@@ -58,7 +57,7 @@ function App() {
       {show===LotteryShow && <Lottery/>}
       {show===SwapShow && <Swap/>}
       {show===AboutShow&& <Aboutus/>}
-     
+      
     <br></br>
     <br></br>
     
