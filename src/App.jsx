@@ -76,10 +76,8 @@ function App() {
 
   return (
     <div className="App">
-       <p class="card-text">
-            Account : {account ? account : "not connected"}
-          </p>
-      <Navbar handler={setShow} show={show}/>
+       
+      <Navbar handler={setShow} show={show} account={account}/>
       <div className='container'>
         <div id="space">
           <Fancylogo />
