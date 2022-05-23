@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { AiOutlineSwap } from 'react-icons/ai'
 import './Swap.css';
+import './../../App'
 
 function Swap() {
   let [from, setFrom] = useState('LBT');
@@ -28,7 +29,7 @@ function Swap() {
       }} />
 
       <div className='balance'>{to}</div>
-      <button >Connect Wallet</button>
+      <button > Connect Wallet</button>
       
       <div className="ExchangeRate">
           <span className="EXC-left "> Exchange rate: </span>

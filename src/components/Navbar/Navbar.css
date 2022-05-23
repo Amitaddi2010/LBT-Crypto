@@ -45,7 +45,19 @@
   transition-property: color, transform;
 
 }
-
+.connect{
+    font-weight: bold;
+    color:white;
+    position: relative;
+    background: rgb(67, 227, 216);
+    background: linear-gradient(176deg, rgba(154,185,183,1) 1%, rgba(132,190,184,1) 55%, rgba(54,126,244,1) 100%);
+    box-shadow: 0px 0px 0px 5px  rgb(125, 149, 146);  width: 10rem;
+    border-radius: 10px;
+    height: 4rem;
+    margin: auto;
+    text-align: center;
+    color: white , solid ;
+}
 
 .mainlogo:hover {
   color: #FF5733;
