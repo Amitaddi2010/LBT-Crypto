@@ -2,7 +2,7 @@ import './Navbar.css'
 import logo from '../../imgs/logo.png'
 import './../../App'
  
-function Navbar({handler, show}) {
+function Navbar({handler, show, account}) {
   return (
      <div className='header'>
      <div className='logo'>
@@ -20,6 +20,9 @@ function Navbar({handler, show}) {
       
     </nav>
 
+    <p class="card-text">
+            Account : {account ? account : "Not Connected"}
+    </p>
 
 
     {/* <button className='connect' 
