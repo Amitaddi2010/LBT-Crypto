@@ -2,8 +2,11 @@ import React from 'react'
 import './../Lottery/Lottery.css'
 function Lottery() {
   return (
-    <div className='Lottery'>
+    <div className='lottery'>
     <h2>Lottery</h2>
+    <div className='balance'></div>
+    <div className='balance'></div>
+    
     <button className='ParticipateNow'> <h2>Participate Now</h2> </button>
 
     <div className="ExchangeRate">

@@ -1,58 +1,36 @@
 
 /* Our Team
 -------------------------------------------------------*/
-.Team{
-    
+.teammembers{
+    height: 100vh;
    display: flex;
    flex-direction: row;
-    
+   justify-content: space-around;
+   align-items: center;
    transition: transform 500ms linear;
-    
+   padding: 5rem;    
 }
  
-.amit:hover
-{
-    
-   transform: translateY(-10px);
-   transition: transform 500ms linear;
+.member{
+   background: rgb(99,142,139);
+   background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
+   border-radius: 40px;
+   margin-left: 10rem;
+   max-height: 24rem;
 }
- .tarun:hover
+  
+ 
+.member:hover
  {
+    height: max-content;
    transform: translateY(-15px);
    transition: transform 500ms linear;
     
 }
- 
- .amit{
-  background: rgb(99,142,139);
-  background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
-  border-radius: 40px;
-  margin-left: 10rem;
-  max-height: 24rem;
- }
- .tarun{
-  background: rgb(99,142,139);
-  background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
-  border-radius: 40px;
-  margin-left: 10rem;
-  max-height: 24rem;
-  margin-bottom: 2rem;
- }
  .h2{
-  background-color: #385f74;
-  background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
-  border-radius: 30px;
-  margin-top: 10rem;
-  margin-bottom: 16rem;
-  padding: 2rem 3rem 3rem;
   text-align: center;
-  border: 1px double #aacbc7;
-  box-shadow: 5px 5px 10px #aacbc7;
-  color:white;
-  max-width: 40rem;
-  scroll-behavior: smooth;
-  padding-top: 1 rem;
-  margin-left: 10rem;
+  color: #68f5e5 ;
+  margin: auto;
     
  }
 

@@ -1,30 +1,38 @@
-import React from 'react'
-import Timeline from 'react-simple-timeline'
+import {useEffect} from 'react'
+import  Aos  from 'aos';
 import './../Timeline/timeline.css'
 export default function Timeliner() {
+  useEffect(() => {
+    Aos.init();
+    console.log(Aos)
+  }, [])
   return (
-    
+
     <section>
-    <div className='timeline'>
-     <h2 className='time'> Timeline </h2>
-         <Timeline stories ={[
-     {
-       'title': 'Lottery Block Token ',
-       'subtitle': 'Release date',
-       'date': 'June 2022',
-        
-     },
-     {
-        'title': 'Metaverse project',
-        'subtitle': 'Release date',
-        'date': 'By the End of 2022',
-    //    'link': 'https://vignette.wikia.nocookie.net/theoffice/images/e/e5/Maxresdefault.jpg/revision/latest?cb=20170626225717',
-    //    'image': 'https://pbs.twimg.com/profile_images/549268771484229632/WnatiHzT.jpeg'
-    //  
-},
-      
-    ]} />
-    </div>
+      <div className='timeline'>
+        <h2 className='time'> Timeline </h2>
+        <div className='line'></div>
+        <div className='timeline-block' data-aos="fade-right">
+          <h3>Lottery Block Token</h3>
+          <h6>Release date</h6>
+          <span>June 2022</span>
+        </div>
+        <div className='timeline-block' data-aos="fade-left">
+          <h3>Metaverse project</h3>
+          <h6>Release date</h6>
+          <span>By the End of 2022</span>
+        </div>
+        <div className='timeline-block' data-aos="fade-right">
+          <h3>Coming Soon..</h3>
+          <h6>Release date</h6>
+          <span>Near Future</span>
+        </div>
+        <div className='timeline-block' data-aos="fade-right">
+          <h3>Coming Soon..</h3>
+          <h6>Release date</h6>
+          <span>Near Future</span>
+        </div>
+      </div>
     </section>
   )
 }
