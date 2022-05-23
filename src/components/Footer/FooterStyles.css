@@ -1,19 +1,10 @@
-.footer{
-     
-        background: rgb(99,142,139);
-        background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
+.footer {
+        background: rgb(99, 142, 139);
+        background: linear-gradient(90deg, rgba(99, 142, 139, 1) 1%, rgba(44, 108, 101, 1) 55%, rgba(63, 86, 124, 1) 100%);
         border-radius: 4px;
-         
-        text-align: center;
-        justify-content: space-evenly;
         color: #68f5e5;
         border: 1px double #aacbc7;
         box-shadow: 5px 5px 10px #aacbc7;
-        gap: 10px;
-        padding: 2rem 20rem 2rem;
         text-align: center;
         min-width: 100%;
-    
-    
-
 }
