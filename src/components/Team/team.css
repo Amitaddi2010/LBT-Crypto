@@ -5,11 +5,24 @@
     
    display: flex;
    flex-direction: row;
-   
-
+    
+   transition: transform 500ms linear;
+    
 }
  
-
+.amit:hover
+{
+    
+   transform: translateY(-10px);
+   transition: transform 500ms linear;
+}
+ .tarun:hover
+ {
+   transform: translateY(-15px);
+   transition: transform 500ms linear;
+    
+}
+ 
  .amit{
   background: rgb(99,142,139);
   background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
@@ -39,11 +52,8 @@
   max-width: 40rem;
   scroll-behavior: smooth;
   padding-top: 1 rem;
-  
- 
-    margin-left: 10rem;
+  margin-left: 10rem;
     
-   
  }
 
 

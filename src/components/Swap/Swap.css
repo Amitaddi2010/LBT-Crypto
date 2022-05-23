@@ -12,6 +12,13 @@
     padding-top: 1 rem;
     margin: 0 auto;
    
+     
+     
+}
+.swap:hover {
+      
+    transform: translateY(-10px);
+    transition: transform 500ms linear;
 }
 
 .swap .balance{
@@ -57,9 +64,8 @@
     background-color: #385f74;
     background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
     border-radius: 9px;
-     
-    padding: 2 2rem;
+    padding: 1rem 1rem;
     border: 0px double #aacbc7;
-    box-shadow: 1px 1px 5px #aacbc7;
+    box-shadow: 0px 0px 1px #aacbc7;
     
 }

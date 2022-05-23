@@ -9,7 +9,7 @@ function Swap() {
 
 
   return (
-    <div className='content swap'>
+    <div className='content swap' >
       <h2 className='title'>Swap</h2>
        
       <div className='balance'>{from}</div>

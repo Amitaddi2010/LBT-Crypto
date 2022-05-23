@@ -1,7 +1,8 @@
 import React from 'react'
 import './../Team/team.css'
 import T1 from './../../imgs/Team1.png'
-import T2 from './../../imgs/team2.png'
+ 
+import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 export default function Team() {
   return (

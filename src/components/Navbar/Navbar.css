@@ -27,6 +27,7 @@
     font-size: large;
     transition: box-shadow 0.5s;
      
+     
 }
 .nav button:hover, button.active{
     color: #68f5e5;
