@@ -12,15 +12,15 @@ function Navbar({handler, show, account}) {
     
     <nav className='nav'>
       
-      <button onClick={()=>handler(2)} className={show == 2 && `active`}>Swap</button>
-      <button onClick={()=>handler(1)} className={show == 1 && `active`}>Lottery</button>
+      <button onClick={()=>handler(2)} className={show === 2 ? `active`:undefined}>Swap</button>
+      <button onClick={()=>handler(1)} className={show === 1 ? `active`:undefined}>Lottery</button>
       <button onClick={()=>{
         document.getElementById('aboutus').scrollIntoView(true);
       }}>About Us</button>
       
     </nav>
 
-    <p class="card-text">
+    <p className="card-text">
             Account : {account ? account : "Not Connected"}
     </p>
 
@@ -35,7 +35,7 @@ function Navbar({handler, show, account}) {
     }}>
     
 Connect MetaMask</button> */}
-    <></>
+
     </div>
   )
 }
