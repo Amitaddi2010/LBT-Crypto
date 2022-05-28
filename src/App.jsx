@@ -54,10 +54,15 @@ function App() {
   }, []);
 
 
+  // useEffect(()=>{
+  //   web3Api.web3.eth.defaultAccount = web3Api.web3.eth.accounts[0];
+  // },[web3Api.web3])
  
    useEffect(() => {
     const getAccount = async () => {
       const accounts = await web3Api.web3.eth.getAccounts();
+      console.log(web3Api.web3.eth)
+      // web3Api.web3.eth.defaultAccount = accounts[0];
       setAccount(accounts[0]);
     };
     web3Api.web3 && getAccount();
@@ -111,6 +116,7 @@ function App() {
     if (LWCSwapData) {
       // ##### we are loading the LWC Swap(Eth Swap) ###
       const LWCSwap = new web3.eth.Contract(EthSwap.abi, LWCSwapData.address);
+      console.log(LWCSwap.address)
       setLWCSwap(LWCSwap);
     } else {
       console.log(
@@ -158,18 +164,20 @@ function App() {
     const networkId = await web3.eth.net.getId();
     const LWCSwapData = EthSwap.networks[networkId];
     const LWCSwap = new web3.eth.Contract(EthSwap.abi, LWCSwapData.address);
+    // console.log(LWCAddress, LWCSwapData.address)
     // here token code start
     const tokenData = Token.networks[networkId];
     setLoader(true);
     let tempAccount = await window.web3.eth.getAccounts();
     const token = new web3.eth.Contract(Token.abi, tokenData.address); // this is duplicate code
+    console.log(LWCSwapData.address)
     token.methods
-      .approve(LWCSwap.address, tokenAmount)
-      .send({ from: tempAccount[0] })
+      .approve(LWCSwapData.address, tokenAmount)
+      .send({ from: account })
       .on("transactionHash", (hash) => {
         LWCSwap.methods
           .sellToken(tokenAmount)
-          .send({ from: tempAccount[0] })
+          .send({ from: account })
           .on("transactionHash", (hash) => {
             setLoader(false);
           });
@@ -214,6 +222,7 @@ function App() {
         <div id="space">
           <Fancylogo />
         </div>
+        {!loading?
         <div className='main'>
           {show === LotteryShow && <Lottery />}
           {show === SwapShow && 
@@ -223,7 +232,7 @@ function App() {
             buyTokens={buyTokens}
             sellTokens={sellTokens}
             />}
-        </div>
+        </div>:<div>loading...</div>}
       </div>
 
             <Timeline />

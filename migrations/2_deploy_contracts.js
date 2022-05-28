@@ -1,6 +1,6 @@
 const EthSwap = artifacts.require("EthSwap");
 const Token = artifacts.require("Token");
-const Lottery = artifacts.require("Lottery");
+const Lottery = artifacts.require("lottery");
 module.exports = async function(deployer) {
   // deploy LWC token
   await deployer.deploy(Token);
@@ -10,7 +10,7 @@ module.exports = async function(deployer) {
   // deploying EthSwap Token
   await deployer.deploy(EthSwap, token.address); // in second argument you are giving token address to the constructor in EthSwap.sol
   const ethSwap = await EthSwap.deployed();
-
+  console.log(ethSwap.address);
   await deployer.deploy(Lottery, token.address); // in second argument you are giving token address to the constructor in EthSwap.sol
   await Lottery.deployed();
 
