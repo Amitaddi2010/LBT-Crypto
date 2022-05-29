@@ -25,16 +25,20 @@ function myFunction() {
       <button   onClick={()=>handler(2)} className={show === 2 ? `active`:undefined}>Swap</button>
       <button onClick={()=>handler(1)} className={show === 1 ? `active`:undefined}>Lottery</button>
       <button onClick={()=>{
-        document.getElementById('aboutus').scrollIntoView(true);
+        document.getElementById('aboutus').scrollIntoView({behavior: 'smooth',
+        block: 'start'});
       }}>About Us</button> 
       <button onClick={()=>{
-        document.getElementById('Timeline').scrollIntoView(true);
+        document.getElementById('Timeline').scrollIntoView({behavior: 'smooth',
+        block: 'start'});
       }}>Timeline</button>
        <button onClick={()=>{
-        document.getElementById('Timeline').scrollIntoView(true);
+        document.getElementById('#').scrollIntoView({behavior: 'smooth',
+        block: 'start'});
       }}>NFT</button>
        <button onClick={()=>{
-        document.getElementById('Timeline').scrollIntoView(true);
+        document.getElementById('#').scrollIntoView({behavior: 'smooth',
+        block: 'start'});
       }}>Metaverse</button>
       <button className='connect'>Account : {account ? account : "Not Connected"}</button>
       <a href="javascript:void(0);" class="icon" onclick={myFunction}>

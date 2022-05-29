@@ -9,7 +9,7 @@ import T3 from './../../imgs/ Team4.webp'
 export default function Team() {
   return (
 
-    <div class="container1">
+    <div class="container1" id ="aboutus">
     <h1 class="heading"><span>meet</span>Our Team</h1>
     <div class="profiles">
       <div class="profile">
