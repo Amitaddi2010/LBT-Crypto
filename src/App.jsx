@@ -10,7 +10,7 @@ import Team from './components/Team/Team'
 import Web3 from "web3";
 import EthSwap from "./abis/EthSwap.json";
 import Token from "./abis/Token.json";
-
+ 
 import detectEthereumProvider from "@metamask/detect-provider";
 
 
@@ -218,6 +218,7 @@ function App() {
     <div className="App">
        
       <Navbar handler={setShow} show={show} account={account}/>
+     
       <div className='container'>
         <div id="space">
           <Fancylogo />

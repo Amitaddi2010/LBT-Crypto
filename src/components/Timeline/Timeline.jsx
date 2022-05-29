@@ -9,7 +9,7 @@ export default function Timeliner() {
   return (
 
     <section>
-      <div className='timeline'>
+      <div id = "Timeline" className='timeline'>
         <h2 className='time'> Timeline </h2>
         <div className='line'></div>
         <div className='timeline-block' data-aos="fade-right">

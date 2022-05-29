@@ -18,12 +18,12 @@ function Swap({ etherBalance, tokenBalance, buyTokens, sellTokens }) {
   }, [from])
 
   return (
-    <div className='content swap' >
-      <h2 className='title'>Swap</h2>
+    <div className='swap'>
+      <h2 className='swap-title'>Swap</h2>
 
       <div className='balance'>{from}
         <span>{from === 'ETH' ? etherBalance : (tokenBalance ? window.web3.utils.fromWei(tokenBalance, "Ether") : '0')}</span>
-        <div><input type="text" value={input} onChange={(e) => {
+        <div><input className='text' type="text" value={input} onChange={(e) => {
           setInput(e.target.value)
         }} />
         </div>
@@ -35,20 +35,20 @@ function Swap({ etherBalance, tokenBalance, buyTokens, sellTokens }) {
         setAngle(old => old + 180);
       }} style={{
         transform: `rotate(${angle}deg)`,
-        background: 'linear-gradient(176deg, rgba(154,185,183,1) 1%, rgba(132,190,184,1) 55%, rgba(54,126,244,1) 100%)',
+        background:  '#484848',
         fontSize: '3.5rem',
-        borderRadius: '100%',
-        boxShadow: '0px 0px 0px 5px rgb(15, 244, 221)',
+        borderRadius: '50%',
+        boxShadow: '0rem 0rem 0rem .2rem rgb(15, 244, 221)',
         animation: ''
       }} />
 
       <div className='balance'>{to}
         <span>{to === 'ETH' ? etherBalance : (tokenBalance ? window.web3.utils.fromWei(tokenBalance, "Ether") : '0')}</span>
         <div>
-          <input type="text" disabled value={input * multiplier} />
+          <input className='text' type="text" disabled value={input * multiplier} />
         </div>
       </div>
-      <button
+      <button className='Swap'
         onClick={
           () => {
             if (from === 'ETH') {

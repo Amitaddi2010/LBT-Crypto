@@ -1,21 +1,21 @@
 .timeline{
+   
+    height: 100vh;
     --space:150px;
     position: relative;
-    background: rgb(99,142,139);
-    background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
-    border-radius: 40px;
+    background: #484848;
     margin:auto;
     text-align: center;
     color: #fff;
     text-align: center;
     height: minmax(min-content, 100vh);
     padding:5rem;
-    padding-top: 1rem;
+    padding-top: 4rem;
+    transition: left 5s cubic-bezier(.5, -1, .5, 2);
+
 }
 .time{
-    background: rgb(99,142,139);
-    background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
-    border-radius: 50px;
+    
     transform: translateY(-10px);
     transition: transform 500ms linear;
 }
@@ -29,7 +29,7 @@
 .timeline-block{
     margin: 1rem;
     padding: 1rem;
-   border: 1px solid #68f5e5;
+   border: 1px solid #ffffff;
     width: fit-content;
     margin:auto;
     position: relative;

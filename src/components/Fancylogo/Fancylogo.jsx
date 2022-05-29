@@ -1,18 +1,13 @@
 import React from 'react'
 import "./Fancylogo.css";
+import Pic from '../../imgs/dice.png'
 function Fancylogo() {
   return (
 
 
-    <div className="elogo">
-    <div className="trif u1"></div>
-    <div className="trif u2"></div>
-    <div className="trif u3"></div>
-    <div className="trif u4"></div>
-    <div className="ct"></div>
-    <div className="trif l1"></div>
-    <div className="trif l4"></div>
-
+     <div>
+     <img className='Pic' src = {Pic} alt="" ></img>
+      
   </div>
         
   )

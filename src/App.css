@@ -2,15 +2,27 @@
 
 .App {
   height: 100vh;
-  background: rgb(221, 225, 225);
-  background: linear-gradient(90deg, rgba(99, 142, 139, 1) 1%, rgba(44, 108, 101, 1) 55%, rgba(63, 86, 124, 1) 100%);
+  background: white; 
   overflow-y: scroll;
   text-align: center;
- 
   font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
   
 }
-
+div {
+  display: block;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+*, ::before, ::after {
+  margin: 0px;
+  padding: 0px;
+}
+ 
 
 .container{
   display: grid;

@@ -28,32 +28,18 @@
     padding: 3rem;
 } */
 .lottery{
-    background-color: #385f74;
-    background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
-    border-radius: 30px;
-    height:622.275px;
-    padding: 0 .8rem;
-    border: 1px double #aacbc7;
-    box-shadow: 5px 5px 10px #aacbc7;
-    color:white;
-    max-width: 28rem;
+    background-color: #484848;
+    border-radius: 20%;
+    border: 1rem double #e8ea96;
+    box-shadow: .5rem .5rem 1rem #d8af2a;
+    max-width: 20rem;
     scroll-behavior: smooth;
-    padding-top: 1 rem;
-    margin: 0 auto;
-   
-     
+    padding: 2rem;
+    color: aliceblue;
+    margin: 2rem auto;  
      
 }
-.lottery .balance{
-   
-    height:150px;
-    background-color: rgba(0, 0, 0,.5);
-    margin: 1.5rem;
-    border-radius: 16px;
-    color:white;
-    line-height: 100px;
-    
-}
+ 
 
 .lottery:hover {
       
@@ -63,34 +49,35 @@
 
 .lottery .balance{
    
-    height:150px;
+    height:5rem;
     background-color: rgba(0, 0, 0,.5);
     margin: 1.5rem;
-    border-radius: 16px;
+    border-radius: 1.6rem;
     color:white;
     line-height: 100px;
     
 }
 .lottery button{
-    width: 95%;
-    height: 50px;
-    border-radius: 16px;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    color:white;
-    background: rgb(154,185,183);
-    background: linear-gradient(176deg, rgba(154,185,183,1) 1%, rgba(132,190,184,1) 55%, rgba(54,126,244,1) 100%);
-    box-shadow: 0px 0px 0px 5px  rgb(15, 244, 221);
-    animation: rotate 1s ease infinite;
-    scroll-behavior: smooth;
+      position:relative;
+      top:1rem;
+      bottom: 2rem;
+      left: 1.2rem;
+      height: 2rem;
+      padding: 1rem 1rem 1.7rem;
+      display: block;
+      width: 17rem;
+      font-size: .6rem;
+      background-color: rgb(255, 255, 255);
+      border: .5rem double #aacbc7;
+      box-shadow: .5rem .5rem 1rem #d8af2a;
+     
 }
 
 .ExchangeRate
 { 
     display: flex;
-    gap: 1.4em;
-    padding: 0.6 2rem;
+    gap: 1.4rem;
+    padding: 0.6 1rem;
 }
 .title
 {
@@ -102,3 +89,22 @@
     box-shadow: 0px 0px 1px #aacbc7;
     
 }
+@media(max-width:768px)
+  {
+      html{
+          font-size: 50%;
+          
+      }
+  }
+  @media(max-width:500px)
+  {
+      html{
+          font-size: 40%;
+      }
+  }
+  @media(max-width:400px)
+  {
+      html{
+          font-size: 36%;
+      }
+  }

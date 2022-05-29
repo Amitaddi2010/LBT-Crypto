@@ -1,70 +1,78 @@
 .nav {
-    background: rgb(99,142,139);
-    background: linear-gradient(90deg, rgba(99,142,139,1) 1%, rgba(44,108,101,1) 55%, rgba(63,86,124,1) 100%); 
-    width: 30rem;
-    border-radius: 20px;
-    margin: auto;
-     text-align: center;
+    background: white; 
+    width: 100vw;
+    height: 1rem;
+    padding-bottom: 4rem;
+    margin:2rem;
+    text-indent: 2em;
+    text-align: center;
     display: flex;
     justify-self: center;
     justify-content: space-evenly;
-    color: #68f5e5;
-    border: 1px double #aacbc7;
-    box-shadow: 5px 5px 10px #aacbc7;
-    padding: 1rem;
+    color: #000000;
+     
+    
 }
 
-.nav button {
+/* .nav button {
     padding: 1rem;
     border-radius: 10px;
     background-color: transparent;
-    border: none;
-    color: white;
+    border: 3px;
+    color: rgb(1, 0, 0);
     font-family: 'Ubuntu', sans-serif;
     font-size: large;
     transition: box-shadow 0.5s;
      
      
-}
-.nav button:hover, button.active{
-    color: #68f5e5;
-    outline: 1px solid #68f5e5; 
-    box-shadow: 5px 5px 10px #aacbc7;
+} */
+/* .nav button:hover, button.active{
+    color: #060606;
+    outline: 1px solid #cb741e; 
+    box-shadow: 5px 5px 10px hwb(221 2% 25%);
 
-}
+} */
 .mainlogo
-{
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  position: relative;
-  color: #fff;
-  font-size: 35px;
-  margin: 15px 15px 0 15px;
+{ 
+  height: 10rem;
+  width: 10rem;
   transition: 0.2s;
   transition-property: color, transform;
-
+  position:relative;  
+  right:6.5rem;
+  bottom: 2rem;
+ padding-left: 1rem;
+  
 }
 .connect{
-    font-weight: bold;
-    color:white;
-    position: relative;
-    background: rgb(67, 227, 216);
-    background: linear-gradient(176deg, rgba(154,185,183,1) 1%, rgba(132,190,184,1) 55%, rgba(54,126,244,1) 100%);
-    box-shadow: 0px 0px 0px 5px  rgb(125, 149, 146);  width: 10rem;
-    border-radius: 10px;
-    height: 4rem;
-    margin: auto;
-    text-align: center;
-    color: white , solid ;
-}
+    color: #090909;
+     
+    margin-right: 6rem;
+    padding:0em 0.5em 0rem ;
+    font-size: 1.2rem;
+    width: 20rem;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    height: 2.5em;
+    margin-bottom: 2rem;
+    border-radius: 0.5em;
+    background: #ffffff;
+    border: 2px solid #1ad7b4;
+    transition: all .3s;
+    box-shadow: .6rem .6rem 1.2rem #17e8cc,
+                -.6rem -.6rem 1.2rem #f9deb7;
 
+                position:relative; 
+                left:1.0rem; top:1.2rem;
+}
+ 
 .mainlogo:hover {
   color: #FF5733;
   transform: scale(1.3);
 }
 
-.header{
+/* .header{
     display: flex;
 }
 .card-text
@@ -80,4 +88,53 @@
     height: max-content;
     padding: 1rem;
     margin-right: 2rem;
-}
+} */
+button {
+    margin-right:0.6rem;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 1rem;
+    width: 8em;
+    height: 3em;
+    margin-bottom: 2rem;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 2px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 0.6rem 0.6rem 1.2rem #c5c5c5,
+                -.6rem -.6rem 1.2rem #ffffff;
+
+                position:relative; 
+                  right:2rem; top:1rem;
+     
+     
+   }
+   
+   button:hover {
+    border: 1px solid rgb(71, 46, 196);
+   }
+   
+   button:active {
+    box-shadow: .4rem .4rem 1.2rem #c5c5c5,
+                -.4rem -.4rem 1.2rem #ffffff;
+   }
+   @media(max-width:998px)
+   {
+       html{
+           font-size: 55%;
+
+       }
+   }
+   
+   @media(max-width:768px)
+   {
+       html{
+           font-size: 55%;
+       }
+   }
+   @media(max-width:400px)
+   {
+       html{
+           font-size: 16%;
+       }
+   }
