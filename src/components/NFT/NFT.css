@@ -1,0 +1,24 @@
+.svgNFT{
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+    margin-right: 1rem;
+}  
+.svgNFT:hover
+{
+    filter: grayscale(0);
+    animation: pulse 1s ease-out .4s;
+}
+h1 {
+    font-size: 60px;
+    color: #656565;
+    margin:3rem 2rem 2rem ;
+  }
+  h1 span{
+    font-style: italic;
+    font-size: 45px;
+  }
+ 

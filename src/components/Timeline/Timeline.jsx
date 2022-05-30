@@ -8,32 +8,54 @@ export default function Timeliner() {
   }, [])
   return (
 
-    <section>
-      <div id = "Timeline" className='timeline'>
-        <h2 className='time'> Timeline </h2>
-        <div className='line'></div>
-        <div className='timeline-block' data-aos="fade-right">
-          <h3>Lottery Block Token</h3>
-          <h6>Release date</h6>
-          <span>June 2022</span>
-        </div>
-        <div className='timeline-block' data-aos="fade-left">
-          <h3>Metaverse project</h3>
-          <h6>Release date</h6>
-          <span>By the End of 2022</span>
-        </div>
-        <div className='timeline-block' data-aos="fade-right">
-          <h3>Coming Soon..</h3>
-          <h6>Release date</h6>
-          <span>Near Future</span>
-        </div>
-        <div className='timeline-block' data-aos="fade-right">
-          <h3>Coming Soon..</h3>
-          <h6>Release date</h6>
-          <span>Near Future</span>
-        </div>
-      </div>
-    </section>
+    <section id="timeline">
+   <h1 className="heading1"><span>Our</span>Roadmap</h1>
+  <article>
+    <div className="inner">
+      <span className="date">
+        <span className="day">30<sup>th</sup></span>
+        <span className="month">Jan</span>
+        <span className="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div className="inner">
+      <span className="date">
+        <span className="day">26<sup>th</sup></span>
+        <span className="month">Jan</span>
+        <span className="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div className="inner">
+      <span className="date">
+        <span className="day">26<sup>th</sup></span>
+        <span className="month">Jan</span>
+        <span className="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div className="inner">
+      <span className="date">
+        <span className="day">26<sup>th</sup></span>
+        <span className="month">Jan</span>
+        <span className="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+   
+</section>
   )
 }
 

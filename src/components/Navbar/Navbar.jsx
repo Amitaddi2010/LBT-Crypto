@@ -29,15 +29,15 @@ function myFunction() {
         block: 'start'});
       }}>About Us</button> 
       <button onClick={()=>{
-        document.getElementById('Timeline').scrollIntoView({behavior: 'smooth',
+        document.getElementById('timeline').scrollIntoView({behavior: 'smooth',
         block: 'start'});
-      }}>Timeline</button>
+      }}>Roadmap</button>
        <button onClick={()=>{
-        document.getElementById('#').scrollIntoView({behavior: 'smooth',
+        document.getElementById('NFT').scrollIntoView({behavior: 'smooth',
         block: 'start'});
       }}>NFT</button>
        <button onClick={()=>{
-        document.getElementById('#').scrollIntoView({behavior: 'smooth',
+        document.getElementById('Metaverse').scrollIntoView({behavior: 'smooth',
         block: 'start'});
       }}>Metaverse</button>
       <button className='connect'>Account : {account ? account : "Not Connected"}</button>

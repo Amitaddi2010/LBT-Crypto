@@ -10,7 +10,8 @@ import Team from './components/Team/Team'
 import Web3 from "web3";
 import EthSwap from "./abis/EthSwap.json";
 import Token from "./abis/Token.json";
- 
+ import NFT from './components/NFT/NFT';
+ import Metaverse from './components/Metaverse/Metaverse';
 import detectEthereumProvider from "@metamask/detect-provider";
 
 
@@ -215,8 +216,9 @@ function App() {
 
 
   return (
+
     <div className="App">
-       
+        
       <Navbar handler={setShow} show={show} account={account}/>
      
       <div className='container'>
@@ -235,11 +237,13 @@ function App() {
             />}
         </div>:<div>loading...</div>}
       </div>
-
-            <Timeline />
-       
-          <Team />
-          <Footer />
+      <Team />  
+      <Timeline />
+<NFT/>
+ 
+<Metaverse/>
+           
+<Footer />
         
          
     </div>

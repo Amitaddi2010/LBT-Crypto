@@ -1,0 +1,34 @@
+h1 {
+
+    font-size: 60px;
+    color: #bca2a2;
+    margin:3rem 2rem 2rem ;
+  }
+  h2{
+      
+    font-size: 40px;
+    color: #ffffff;
+    margin:3rem 2rem 2rem ;
+  }
+  h1 span{
+    font-style: italic;
+    font-size: 45px;
+  }
+ .Metaverse{
+     position: relative;
+     left: 4rem;
+     right: 4rem;
+    
+ }
+ .Metaverse1{
+    position: relative;
+     left: 4rem;
+     right: 4rem;
+    height: 100vh;
+      
+    
+}
+.Meta{
+    background-color: rgb(22, 18, 18);
+    margin-bottom: -3rem;
+}

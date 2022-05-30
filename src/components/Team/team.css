@@ -49,6 +49,9 @@ body {
   cursor: pointer;
   transition: 400ms;
 }
+.user-name{
+ text-align: center;
+}
 
 .profile:hover .profile-img {
   filter: grayscale(0);

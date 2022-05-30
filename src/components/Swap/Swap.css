@@ -1,3 +1,6 @@
+body{
+    height: 100vh;
+}
 .swap{
     background-color: #484848;
     border-radius: 20%;
@@ -6,7 +9,8 @@
     max-width: 20rem;
     scroll-behavior: smooth;
     padding: 2rem;
-    margin: 2rem auto;  
+     
+    margin-bottom: 2rem;
 }
 .swap:hover {
       
