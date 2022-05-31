@@ -5,7 +5,8 @@ import './../../App'
 function Navbar({handler, show, account}) {
  
 function myFunction() {
-  var x = document.getElementById("myTopnav");
+  var x = document.getElementById("myTopnav").scrollIntoView({behavior: 'auto',
+  block: 'start'});
   if (x.className === "nav") {
     x.className += "responsive";
   } else {
@@ -41,8 +42,8 @@ function myFunction() {
         block: 'start'});
       }}>Metaverse</button>
       <button className='connect'>Account : {account ? account : "Not Connected"}</button>
-      <a href="javascript:void(0);" class="icon" onclick={myFunction}>
-    <i class="fa fa-bars"></i>
+      <a href="javascript:void(0);" className="icon" onClick={myFunction}>
+    <i className="fa fa-bars"></i>
     </a>
     
      </nav>

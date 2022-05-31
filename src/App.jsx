@@ -9,6 +9,7 @@ import Timeline from './components/Timeline/Timeline'
 import Team from './components/Team/Team'
 import Web3 from "web3";
 import EthSwap from "./abis/EthSwap.json";
+import Loot from  "./abis/lottery.json";
 import Token from "./abis/Token.json";
  import NFT from './components/NFT/NFT';
  import Metaverse from './components/Metaverse/Metaverse';
@@ -16,6 +17,7 @@ import detectEthereumProvider from "@metamask/detect-provider";
 
 
 function App() {
+   
   
   const LotteryShow = 1;
   const SwapShow = 2;
@@ -110,6 +112,8 @@ function App() {
     }
 
     //##########################################
+    
+
 
     // ##### we are loading the LWC Swap data Contract ###
 
@@ -156,6 +160,23 @@ function App() {
         setLoader(false);
       });
   };
+
+//   const Loot = async(etherAmount) =>{
+//   const web3 = window.web3;
+//   const networkId = await web3.eth.net.getId();
+//   const lotteryData = Loot.networks[networkId];
+//   setLoader(true);
+//   let tempAccount = await window.web3.eth.getAccounts();
+//   let Lootdata = await window.web3.eth.Contract(
+//     Loot.abi,
+//     lotteryData.address
+//   );
+// Lootdata.methods
+// .participants()
+
+
+// }
+  
 
   // sell token function
 
@@ -211,7 +232,8 @@ function App() {
   </div>  
   );
   }
-
+//////
+ 
 
 
 

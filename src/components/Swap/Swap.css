@@ -4,13 +4,13 @@ body{
 .swap{
     background-color: #484848;
     border-radius: 20%;
-    border: 1rem double #e8ea96;
-    box-shadow: .5rem .5rem 1rem #d8af2a;
-    max-width: 20rem;
+    border: .5rem double #e8ea96;
+    box-shadow: .5rem .5rem 10rem #d8af2a;
+    max-width: 25rem;
     scroll-behavior: smooth;
-    padding: 2rem;
+    padding: 1.5rem;
      
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 .swap:hover {
       
@@ -28,7 +28,7 @@ body{
     height:4rem;
     background-color: rgba(0, 0, 0,.5);
     margin: 1.5rem;
-    border-radius: 1.6rem;
+    border-radius: 20%;
     color:rgb(255, 255, 255);
     line-height: 100px;
     height: minmax(min-content, 100vh);
@@ -39,16 +39,22 @@ body{
 
 
 }
+h3{
+    font-size: 1.5rem;
+color: #ffffff;
+}
 .swap button{ 
       position:relative;
+      align-items: center;
       top:1rem;
-      left: 6rem;
+      left: 5rem;
       padding: 1rem 1rem 1rem;
       display: block;
-      width: 8rem;
+      width: 15rem;
       font-size: 1rem;
-       background-color: rgb(255, 255, 255);
-      border: .5rem double #aacbc7;
+      border-radius: 20%;
+       background-color: #484848;
+      border: rem double #e8ea96;
       box-shadow: .5rem .5rem 1rem #d8af2a;
 }
 .swap svg{
@@ -62,14 +68,15 @@ body{
 .ExchangeRate{ 
     position:relative;
     color: rgb(255, 255, 255);
-      top:2rem;
+      top:1.2rem;
       left: .5rem;
       margin: 1rem;
       font-size: .7rem;
 }
 .swap-title
 {
-     font-size: 1.5rem;
+    margin-top: -1rem;
+     font-size: 2rem;
      color: #ffffff;
      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
@@ -82,11 +89,12 @@ body{
     position: relative;
     height: 2.5rem;
     bottom: 8.3rem;
-    width: 17rem;
+    width: 22rem;
     border: .2rem solid #cdcdcd;
     border-color: rgba(0, 0, 0, .14);
     background-color: AliceBlue;
     font-size: 1rem;
+    border-radius: 20%;
     border: .1rem double #aacbc7;
     box-shadow: .5rem .5rem 1rem #d8af2a;
 }

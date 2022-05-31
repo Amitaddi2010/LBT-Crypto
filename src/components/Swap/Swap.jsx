@@ -61,7 +61,7 @@ function Swap({ etherBalance, tokenBalance, buyTokens, sellTokens }) {
           }
         }
 
-      >Swap</button>
+      ><h3>Swap</h3></button>
 
       <div className="ExchangeRate">
         <span className="EXC-left "> Exchange rate: </span>

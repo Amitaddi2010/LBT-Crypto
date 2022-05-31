@@ -1,13 +1,16 @@
 import React from 'react'
 import './../Lottery/Lottery.css'
+import './../../App'
 function Lottery() {
+
+  
   return (
     <div className='lottery'>
     <h2>Lottery</h2>
     <div className='balance'></div>
     
     
-    <button className='ParticipateNow'> <h2>Participate Now</h2> </button>
+    <button className='ParticipateNow' > <h3>Participate Now</h3> </button>
 
     <div className="ExchangeRate">
           <span className="EXC-left "> Exchange rate: </span>
