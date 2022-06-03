@@ -1,18 +1,17 @@
 import './menubar.css'
 import logo from '../../imgs/logo.png'
 import './../../App'
- import Link from 'react-scroll/modules/components/Link';
 function Navbar({handler, show, account}) {
  
-function myFunction() {
-  var x = document.getElementById("myTopnav").scrollIntoView({behavior: 'auto',
-  block: 'start'});
-  if (x.className === "nav") {
-    x.className += "responsive";
-  } else {
-    x.className = "nav";
-  }
-}
+// function myFunction() {
+//   var x = document.getElementById("myTopnav").scrollIntoView({behavior: 'auto',
+//   block: 'start'});
+//   if (x.className === "nav") {
+//     x.className += "responsive";
+//   } else {
+//     x.className = "nav";
+//   }
+// }
  
   return (
      <div className='header'>
@@ -42,9 +41,9 @@ function myFunction() {
         block: 'start'});
       }}>Metaverse</button>
       <button className='connect'>Account : {account ? account : "Not Connected"}</button>
-      <a href="javascript:void(0);" className="icon" onClick={myFunction}>
+      {/* <a href="#" className="icon" onClick={myFunction}>
     <i className="fa fa-bars"></i>
-    </a>
+    </a> */}
     
      </nav>
      </div>

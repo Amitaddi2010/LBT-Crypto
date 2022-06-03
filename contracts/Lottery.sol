@@ -5,6 +5,7 @@ import "./ERC20_LBT.sol";
         address public manager;
         address payable[] public participants;
         Token public token; 
+        event win(address);
         constructor(Token _token)
         {     token = _token;
               manager = msg.sender;
@@ -34,6 +35,7 @@ import "./ERC20_LBT.sol";
             uint index = r % participants.length;
             winner = participants[index];
             winner.transfer(CheckBalance());
+            emit win(winner);
             participants=new address payable[](0);
 
         }
