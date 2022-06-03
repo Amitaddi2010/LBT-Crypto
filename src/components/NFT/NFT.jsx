@@ -16,19 +16,19 @@ export default function NFT() {
     <div id='NFT'>
         <h1 className="heading1"><span>Our</span>NFT</h1>
         
-  <marquee direction = "left">
-        <img className='svgNFT' src={NFT1} border= "1rem double #e8ea96" border-radius= "20%" height="250px" />
-        <img className='svgNFT' src={NFT2} border= "1rem double #e8ea96" height="250px" />
-        <img className='svgNFT' src={NFT3} border= "1rem double #e8ea96" height="250px" />
-        <img className='svgNFT' src={NFT4} border= "1rem double #e8ea96" height="250px" />
-        <img className='svgNFT' src={NFT5} border= "1rem double #e8ea96" height="250px" />
+  <marquee className='marquee' direction = "left">
+        <img alt="" className='svgNFT' src={NFT1} border= "1rem double #e8ea96" border-radius= "20%" height="250px" />
+        <img alt="" className='svgNFT' src={NFT2} border= "1rem double #e8ea96" height="250px" />
+        <img alt="" className='svgNFT' src={NFT3} border= "1rem double #e8ea96" height="250px" />
+        <img alt="" className='svgNFT' src={NFT4} border= "1rem double #e8ea96" height="250px" />
+        <img alt="" className='svgNFT' src={NFT5} border= "1rem double #e8ea96" height="250px" />
         </marquee>
-        <marquee direction = "right">
-        <img className='svgNFT' src={NFT6} border= "1rem double #e8ea96" height="250px" />
-        <img className='svgNFT' src={NFT7} border= "1rem double #e8ea96" height="250px" />
-        <img className='svgNFT' src={NFT8} border= "1rem double #e8ea96" height="250px" />
-        <img className='svgNFT' src={NFT9} border= "1rem double #e8ea96" height="250px" />
-        <img className='svgNFT' src={NFT10}border= "1rem double #e8ea96" height="250px" />
+        <marquee className='marquee' direction = "right">
+        <img alt="" className='svgNFT' src={NFT6} border= "1rem double #e8ea96" height="250px" />
+        <img alt="" className='svgNFT' src={NFT7} border= "1rem double #e8ea96" height="250px" />
+        <img alt="" className='svgNFT' src={NFT8} border= "1rem double #e8ea96" height="250px" />
+        <img alt="" className='svgNFT' src={NFT9} border= "1rem double #e8ea96" height="250px" />
+        <img alt="" className='svgNFT' src={NFT10}border= "1rem double #e8ea96" height="250px" />
          
         </marquee>
     

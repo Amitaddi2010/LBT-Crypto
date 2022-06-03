@@ -1,24 +1,62 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './../Lottery/Lottery.css'
 import './../../App'
-function Lottery() {
+import lottery from '../../abis/lottery.json';
 
-  
+function Lottery({manager, account, setLoader}) {
+  const [isManager, setIsManager] = useState(false);
+  const transact = async ()=>{
+      setLoader(true);
+      let web3 =  window.web3;
+const networkId = await web3.eth.net.getId();
+const lotterydata = lottery.networks[networkId];
+      web3.eth.sendTransaction({ 
+        from: account,
+        to: lotterydata.address, 
+        value: '1000000000000000000',
+      }).then( function(tx) { ;
+      console.log("Transaction: ", tx); 
+      setLoader(false);
+      });
+  }
+  const selectWinner = async ()=>{
+    const web3 = window.web3;
+    const networkId = await web3.eth.net.getId();
+    const lotterydata = lottery.networks[networkId];
+    const contract = new web3.eth.Contract(lottery.abi, lotterydata.address);
+    contract.methods.selectWinner().send({from:account})
+  }
+  useEffect(()=>{
+    if(account && manager){
+      if(account.toLowerCase()===manager.toLowerCase()){
+        setIsManager(true);
+      }else{
+        setIsManager(false);
+      }
+    }
+  },[manager, account])
   return (
     <div className='lottery'>
     <h2>Lottery</h2>
-    <div className='balance'></div>
-    
-    
-    <button className='ParticipateNow' > <h3>Participate Now</h3> </button>
-
-    <div className="ExchangeRate">
-          <span className="EXC-left "> Exchange rate: </span>
-          <span className="EXC-right">1 ETH   =   200000 LBT &#9432;   </span>
-          <br></br>
-          <span className="EXC-Fee"> Participation Fee   =   1000LBT &#9432;</span>
-        </div>
-
+      {isManager?
+      <div>
+      <h1>Manager</h1>
+      <button onClick={
+        ()=>{
+          console.log("selecting winner");
+          selectWinner();
+        }
+      }>Select Winner</button>
+      </div>
+      :
+      <div>
+      <h1>Participant</h1>
+      <button
+      onClick={()=>{
+        transact()
+      }}
+      >Participate</button>
+      </div>}
     </div>
   )
 }
