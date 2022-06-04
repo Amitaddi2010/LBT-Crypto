@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import './../Lottery/Lottery.css'
 import './../../App'
 import lottery from '../../abis/lottery.json';
-import Popup from 'popup';
+ 
  
  
 function Lottery({manager, account, setLoader}) {
