@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
+ 
 import './../Lottery/Lottery.css'
 import './../../App'
 import lottery from '../../abis/lottery.json';
-
+import Popup from 'popup';
+ 
+ 
 function Lottery({manager, account, setLoader}) {
   const [isManager, setIsManager] = useState(false);
   const transact = async ()=>{
@@ -17,8 +20,11 @@ const lotterydata = lottery.networks[networkId];
       }).then( function(tx) { ;
       console.log("Transaction: ", tx); 
       setLoader(false);
+      alert(' Participated Sucessfully ')
+       
       });
   }
+
   const selectWinner = async ()=>{
     const web3 = window.web3;
     const networkId = await web3.eth.net.getId();
@@ -26,6 +32,16 @@ const lotterydata = lottery.networks[networkId];
     const contract = new web3.eth.Contract(lottery.abi, lotterydata.address);
     contract.methods.selectWinner().send({from:account})
   }
+
+  // const getBalance = async ()=>{
+  //   const web3 = window.web3;
+  //   const networkId = await web3.eth.net.getId();
+  //   const lotterydata = lottery.networks[networkId];
+  //   const contract = new web3.eth.Contract(lottery.abi, lotterydata.address);
+  //   contract.methods.getBalance();
+  //   console.log(getBalance);
+  // }
+
   useEffect(()=>{
     if(account && manager){
       if(account.toLowerCase()===manager.toLowerCase()){
@@ -35,9 +51,10 @@ const lotterydata = lottery.networks[networkId];
       }
     }
   },[manager, account])
+
   return (
     <div className='lottery'>
-    <h2>Lottery</h2>
+    <h2>Lottery </h2>
       {isManager?
       <div>
       <h1>Manager</h1>
@@ -46,16 +63,17 @@ const lotterydata = lottery.networks[networkId];
           console.log("selecting winner");
           selectWinner();
         }
-      }>Select Winner</button>
+      }><h3>Select Winner</h3></button>
       </div>
       :
       <div>
-      <h1>Participant</h1>
+      <h2>Try Your Luck</h2>
       <button
       onClick={()=>{
         transact()
       }}
-      >Participate</button>
+      ><h3>Participate Now</h3></button>
+      
       </div>}
     </div>
   )

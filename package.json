@@ -1,4 +1,5 @@
 {
+  "homepage": " http://Amitaddi2010.github.io/{LBT-Crypto ",
   "name": "lottery-block-token",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
     "mdbreact": "^5.2.0",
+    "popup": "^0.0.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
@@ -28,7 +30,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile-contracts": "truffle migrate --reset"
+    "compile-contracts": "truffle migrate --reset",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"   
   },
   "eslintConfig": {
     "extends": [
@@ -47,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

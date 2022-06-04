@@ -2,8 +2,8 @@
 pragma solidity >=0.5.0 < 0.9.0;
 
 contract Token {
-    string public name = "LWC Token";
-    string public symbol = "LWC";
+    string public name = "Lottery Block Token";
+    string public symbol = "LBT";
     uint256 public totalSupply = 1000000000000000000000000; // 1000000000000000000000000(it is written in Wei unit) // we are creating 1 million token supply
     uint8 public decimals = 18;
 

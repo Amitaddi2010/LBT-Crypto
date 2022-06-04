@@ -15,22 +15,23 @@ export default function Team() {
       <div className="profile">
         <img alt=""  className="profile-img" src={T1} />
         <h3 className="user-name">Amit Saraswat</h3>
-        <h5>Creative Director</h5>
-        <p>Expert in Blockchain Web3 NFT!</p>
+        <h5> Founder and CEO </h5>
+        <p>Researcher, Blockchain Developer</p>
+      </div>
+      
+      <div className="profile">
+         
+        <img alt="" className='profile-img' src={T3} />
+        <h3 className="user-name">Tarun Raddy</h3>
+        <h5>Co-Founder</h5>
+        <p>Full Stack Blockchain developer </p>
       </div>
       <div className="profile">
         <img alt=""  className="profile-img" src={T2}/>
       
         <h3 className="user-name">Rukhmani</h3>
         <h5>Managing Partner</h5>
-        <p>Team Leader and Management</p>
-      </div>
-      <div className="profile">
-         
-        <img alt="" className='profile-img' src={T3} />
-        <h3 className="user-name">Tarun Raddy</h3>
-        <h5>Project Manager</h5>
-        <p>Blockchain and Web developer !</p>
+        <p> Team Leader and Management </p>
       </div>
     </div>
   </div>

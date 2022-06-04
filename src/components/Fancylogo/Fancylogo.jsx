@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Fancylogo.css";
-import Pic from '../../imgs/dice.png'
+import Pic from '../../imgs/dice.gif'
 function Fancylogo() {
   return (
 

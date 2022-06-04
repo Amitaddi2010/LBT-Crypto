@@ -14,44 +14,46 @@ export default function Timeliner() {
     <div className="inner">
       <span className="date">
         <span className="day">30<sup>th</sup></span>
-        <span className="month">Jan</span>
-        <span className="year">2014</span>
+        <span className="month">Jun</span>
+        <span className="year">2022</span>
       </span>
-      <h2>The Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+      <h2>LBT Token</h2>
+      <p> A Lottery Block Token Deployment: Test Network: 1 Polygon 2. Ropsten </p>
     </div>
   </article>
   <article>
     <div className="inner">
       <span className="date">
         <span className="day">26<sup>th</sup></span>
-        <span className="month">Jan</span>
-        <span className="year">2014</span>
+        <span className="month">Nov</span>
+        <span className="year">2022</span>
       </span>
-      <h2>The Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+      <h2>Lottery Block Token </h2>
+      <p>
+      A Lottery Block Token Deployment: Main Network: Polygon Blockchain
+      </p>
+    </div>
+  </article>
+  <article>
+    <div className="inner">
+      <span className="date">
+        <span className="day">23<sup>th</sup></span>
+        <span className="month">Jan</span>
+        <span className="year">2023</span>
+      </span>
+      <h2>NFT Project Launch</h2>
+      <p>NFT Marketplace Launch : 1. Buy and Sell 2. Mint NFT </p>
     </div>
   </article>
   <article>
     <div className="inner">
       <span className="date">
         <span className="day">26<sup>th</sup></span>
-        <span className="month">Jan</span>
-        <span className="year">2014</span>
+        <span className="month">Mar</span>
+        <span className="year">2022</span>
       </span>
-      <h2>The Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-    </div>
-  </article>
-  <article>
-    <div className="inner">
-      <span className="date">
-        <span className="day">26<sup>th</sup></span>
-        <span className="month">Jan</span>
-        <span className="year">2014</span>
-      </span>
-      <h2>The Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+      <h2>Metaverse</h2>
+      <p>Launch our LBT into Metaverse : Casino Block in Metaverse , Spin to Win $ </p>
     </div>
   </article>
    

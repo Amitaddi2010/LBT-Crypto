@@ -56,10 +56,18 @@ function App() {
   return (
 
     <div className="App">
-        
+     {/* <div className = "loader-wrapper"> 
+<span ClassName= "loader" ><span className= "loader-inner" ></span> </span>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow")
+  })
+</script> */}
       <Navbar handler={setShow} show={show} account={account}/>
      
-      <div className='container'>
+      <div className='container'>    
         <div id="space">
           <Fancylogo />
         </div>

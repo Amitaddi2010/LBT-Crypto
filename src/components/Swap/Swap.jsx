@@ -23,7 +23,7 @@ function Swap({ etherBalance, tokenBalance, buyTokens, sellTokens }) {
 
       <div className='balance'>{from}
         <span>{from === 'ETH' ? etherBalance : (tokenBalance ? window.web3.utils.fromWei(tokenBalance, "Ether") : '0')}</span>
-        <div><input className='text' type="text" value={input} onChange={(e) => {
+        <div><input className='text' type="text" placeholder="Enter Amount" value={input} onChange={(e) => {
           setInput(e.target.value)
         }} />
         </div>
@@ -45,9 +45,10 @@ function Swap({ etherBalance, tokenBalance, buyTokens, sellTokens }) {
       <div className='balance'>{to}
         <span>{to === 'ETH' ? etherBalance : (tokenBalance ? window.web3.utils.fromWei(tokenBalance, "Ether") : '0')}</span>
         <div>
-          <input className='text' type="text" disabled value={input * multiplier} />
+          <input className='text' type="text"  disabled value={input * multiplier} />
         </div>
       </div>
+      
       <button className='Swap'
         onClick={
           () => {
@@ -65,9 +66,8 @@ function Swap({ etherBalance, tokenBalance, buyTokens, sellTokens }) {
 
       <div className="ExchangeRate">
         <span className="EXC-left "> Exchange rate: </span>
-        <span className="EXC-right"> 1 ETH :  200000 LBT &#9432;   </span>
-        <br></br>
-        <span className="EXC-Fee"> Swap Fee :  1000LBT &#9432;</span>
+        <span className="EXC-right"> 1 ETH :  100 LBT &#9432;   </span>
+         
       </div>
     </div>
   )
