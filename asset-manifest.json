@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/LBT-Crypto/static/css/main.78a77af9.chunk.css",
-    "main.js": "/LBT-Crypto/static/js/main.bba8b341.chunk.js",
-    "main.js.map": "/LBT-Crypto/static/js/main.bba8b341.chunk.js.map",
+    "main.js": "/LBT-Crypto/static/js/main.539ff95b.chunk.js",
+    "main.js.map": "/LBT-Crypto/static/js/main.539ff95b.chunk.js.map",
     "runtime-main.js": "/LBT-Crypto/static/js/runtime-main.0c0f96d7.js",
     "runtime-main.js.map": "/LBT-Crypto/static/js/runtime-main.0c0f96d7.js.map",
-    "static/js/2.bcd0272f.chunk.js": "/LBT-Crypto/static/js/2.bcd0272f.chunk.js",
-    "static/js/2.bcd0272f.chunk.js.map": "/LBT-Crypto/static/js/2.bcd0272f.chunk.js.map",
+    "static/js/2.8985aa7c.chunk.js": "/LBT-Crypto/static/js/2.8985aa7c.chunk.js",
+    "static/js/2.8985aa7c.chunk.js.map": "/LBT-Crypto/static/js/2.8985aa7c.chunk.js.map",
     "static/js/3.eadd9de9.chunk.js": "/LBT-Crypto/static/js/3.eadd9de9.chunk.js",
     "static/js/3.eadd9de9.chunk.js.map": "/LBT-Crypto/static/js/3.eadd9de9.chunk.js.map",
     "index.html": "/LBT-Crypto/index.html",
     "static/css/main.78a77af9.chunk.css.map": "/LBT-Crypto/static/css/main.78a77af9.chunk.css.map",
-    "static/js/2.bcd0272f.chunk.js.LICENSE.txt": "/LBT-Crypto/static/js/2.bcd0272f.chunk.js.LICENSE.txt",
+    "static/js/2.8985aa7c.chunk.js.LICENSE.txt": "/LBT-Crypto/static/js/2.8985aa7c.chunk.js.LICENSE.txt",
     "static/media/ Team4.60b417e9.webp": "/LBT-Crypto/static/media/ Team4.60b417e9.webp",
     "static/media/T2.9b093867.jpeg": "/LBT-Crypto/static/media/T2.9b093867.jpeg",
     "static/media/Team1.1372a2b8.png": "/LBT-Crypto/static/media/Team1.1372a2b8.png",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0c0f96d7.js",
-    "static/js/2.bcd0272f.chunk.js",
+    "static/js/2.8985aa7c.chunk.js",
     "static/css/main.78a77af9.chunk.css",
-    "static/js/main.bba8b341.chunk.js"
+    "static/js/main.539ff95b.chunk.js"
   ]
 }
