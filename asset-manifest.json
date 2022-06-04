@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/%7BLBT-Crypto%20/static/css/main.78a77af9.chunk.css",
+    "main.js": "/%7BLBT-Crypto%20/static/js/main.64670da9.chunk.js",
+    "main.js.map": "/%7BLBT-Crypto%20/static/js/main.64670da9.chunk.js.map",
+    "runtime-main.js": "/%7BLBT-Crypto%20/static/js/runtime-main.564f55db.js",
+    "runtime-main.js.map": "/%7BLBT-Crypto%20/static/js/runtime-main.564f55db.js.map",
+    "static/js/2.100c692e.chunk.js": "/%7BLBT-Crypto%20/static/js/2.100c692e.chunk.js",
+    "static/js/2.100c692e.chunk.js.map": "/%7BLBT-Crypto%20/static/js/2.100c692e.chunk.js.map",
+    "static/js/3.64e17c51.chunk.js": "/%7BLBT-Crypto%20/static/js/3.64e17c51.chunk.js",
+    "static/js/3.64e17c51.chunk.js.map": "/%7BLBT-Crypto%20/static/js/3.64e17c51.chunk.js.map",
+    "index.html": "/%7BLBT-Crypto%20/index.html",
+    "static/css/main.78a77af9.chunk.css.map": "/%7BLBT-Crypto%20/static/css/main.78a77af9.chunk.css.map",
+    "static/js/2.100c692e.chunk.js.LICENSE.txt": "/%7BLBT-Crypto%20/static/js/2.100c692e.chunk.js.LICENSE.txt",
+    "static/media/ Team4.60b417e9.webp": "/%7BLBT-Crypto%20/static/media/ Team4.60b417e9.webp",
+    "static/media/T2.9b093867.jpeg": "/%7BLBT-Crypto%20/static/media/T2.9b093867.jpeg",
+    "static/media/Team1.1372a2b8.png": "/%7BLBT-Crypto%20/static/media/Team1.1372a2b8.png",
+    "static/media/bighead-1.f64b34fd.svg": "/%7BLBT-Crypto%20/static/media/bighead-1.f64b34fd.svg",
+    "static/media/bighead-10.728c802a.svg": "/%7BLBT-Crypto%20/static/media/bighead-10.728c802a.svg",
+    "static/media/bighead-2.531bee23.svg": "/%7BLBT-Crypto%20/static/media/bighead-2.531bee23.svg",
+    "static/media/bighead-3.ee360106.svg": "/%7BLBT-Crypto%20/static/media/bighead-3.ee360106.svg",
+    "static/media/bighead-4.70326ba8.svg": "/%7BLBT-Crypto%20/static/media/bighead-4.70326ba8.svg",
+    "static/media/bighead-5.95b99530.svg": "/%7BLBT-Crypto%20/static/media/bighead-5.95b99530.svg",
+    "static/media/bighead-6.9b137ad1.svg": "/%7BLBT-Crypto%20/static/media/bighead-6.9b137ad1.svg",
+    "static/media/bighead-7.a8629561.svg": "/%7BLBT-Crypto%20/static/media/bighead-7.a8629561.svg",
+    "static/media/bighead-8.a80df18a.svg": "/%7BLBT-Crypto%20/static/media/bighead-8.a80df18a.svg",
+    "static/media/bighead-9.692c0380.svg": "/%7BLBT-Crypto%20/static/media/bighead-9.692c0380.svg",
+    "static/media/dice.51d3bd55.gif": "/%7BLBT-Crypto%20/static/media/dice.51d3bd55.gif",
+    "static/media/logo.51995d31.png": "/%7BLBT-Crypto%20/static/media/logo.51995d31.png",
+    "static/media/meta2.793e80c4.png": "/%7BLBT-Crypto%20/static/media/meta2.793e80c4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.564f55db.js",
+    "static/js/2.100c692e.chunk.js",
+    "static/css/main.78a77af9.chunk.css",
+    "static/js/main.64670da9.chunk.js"
+  ]
+}
