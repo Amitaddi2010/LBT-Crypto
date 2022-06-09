@@ -20,9 +20,8 @@ export default function Team() {
       </div>
       
       <div className="profile">
-         
         <img alt="" className='profile-img' src={T3} />
-        <h3 className="user-name">Tarun Raddy</h3>
+        <h3 className="user-name">Tarun Reddy</h3>
         <h5>Co-Founder</h5>
         <p>Full Stack Blockchain developer </p>
       </div>
