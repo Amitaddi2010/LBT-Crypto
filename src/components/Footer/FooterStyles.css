@@ -1,8 +1,6 @@
 .footer {
-        background: #151414;
-        color: white;
-         
-        box-shadow: 5px 5px 10px #aacbc7;
-        text-align: center;
-        
+    text-align: center;
+	background-color: skyblue;
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
 }
