@@ -71,6 +71,9 @@
     border-radius: 20px;
     
  }
+ .swap svg{
+     transition: all .5s;
+ }
  @media(max-width:768px)
  {
      html{

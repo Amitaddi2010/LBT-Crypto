@@ -1,6 +1,7 @@
 import './App.css';
+import loadingImage from './imgs/loading.gif'
+
 import Navbar from './components/Navbar/Navbar';
-import { useState, useEffect } from 'react';
 import Lottery from './components/Lottery/Lottery';
 import Swap from './components/Swap/Swap';
 import Footer from './components/Footer/Footer'
@@ -11,13 +12,15 @@ import Home from './components/Home/Home';
 import Metaverse from './components/Metaverse/Metaverse';
 import { loadAccount, loadWeb3, loadContract, buyTokens, sellTokens, loadBalance } from './utils/utils';
 
-import { Routes, Route, Link } from "react-router-dom";
+import { useState, useEffect, useContext,useLayoutEffect } from 'react';
+import { Routes, Route, useLocation, UNSAFE_NavigationContext } from "react-router-dom";
 
 
 function App() {
   const SwapShow = 2;
   const LotteryShow = 1;
-  const [appClass, setAppClass] = useState(false);
+  const [isLanding, setIsLanding] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [show, setShow] = useState(SwapShow);
   const [account, setAccount] = useState(null);
   const [balanceAsEther, setbalanceAsEther] = useState();
@@ -26,6 +29,25 @@ function App() {
   const [manager, setManager] = useState('');
   const [lotteryContract, setLotteryContract] = useState();
   const [lotteryAddress, setLotteryAddress] = useState("");
+  const [path, setPath] = useState(useLocation().pathname);
+  const navigation = useContext(UNSAFE_NavigationContext).navigator;
+useLayoutEffect(() => {
+  if (navigation) {
+    navigation.listen((locationListener) =>{
+      setPath(locationListener.location.pathname)
+    }
+    );
+  }
+}, [navigation]);
+  useEffect(()=>{
+    console.log(path,"Path");
+    setIsLoading(true);
+    console.log('loading start')
+    setTimeout(()=>{
+      setIsLoading(false);
+      console.log('loading stopped')
+    },1000);
+  },[path]);
   useEffect(() => {
     loadWeb3();
     loadAccount(setAccount);
@@ -56,11 +78,12 @@ function App() {
     }
   };
   return (
-    <div className={appClass ? 'App Landing':'App' }>
+    <div className={`App ${path=='/' || isLanding? 'Landing' :''}`}>
       <Navbar handler={setShow} show={show} account={account} />
       <div className='container'>
+        {isLoading ? <img className='loadingImage' src={loadingImage} alt="Loading"/> : 
         <Routes>
-          <Route path="/" element={<Home setAppClass={setAppClass} />} />
+          <Route path="/" element={<Home setAppClass={setIsLanding} path={path} />} />
           <Route path="/lottery" element={<Lottery manager={manager} account={account} setLoader={setLoader} />} />
           <Route path="/swap" element={<Swap
             etherBalance={balanceAsEther}
@@ -76,9 +99,9 @@ function App() {
           <Route path="timeline" element={<Timeline />} />
           <Route path="/nft" element={<NFT />} />
           <Route path="/metaverse" element={<Metaverse />} />
-        </Routes>
+        </Routes>}
       </div>
-      <Footer />
+     {isLoading && path == '/'?<></>:<Footer />}
     </div>
 
   );
