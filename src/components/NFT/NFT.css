@@ -9,6 +9,8 @@
 }  
 .svgNFT:hover
 {
+  outline: 1px solid rgb(117, 218, 244);
+  outline-offset: 10px;
     filter: grayscale(0);
     animation: pulse 1s ease-out .4s;
 }

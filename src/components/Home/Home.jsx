@@ -1,5 +1,7 @@
 import {useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import './home.css'
+import landing from '../../imgs/landing.jpg'
 
 function Home({setAppClass}) {
     useEffect(() => {
@@ -10,9 +12,17 @@ function Home({setAppClass}) {
     }, [setAppClass])
     
   return (
-    <div>
-        <h1>Home</h1>
-        <Link to="/swap">Get Started</Link>
+    <div className='landingPage'>
+      <img src={landing}></img>
+      <h2 className='btn2'>Be a DeFi Chef with &nbsp; <span className='Token'>LB Token and Swap</span> .</h2> 
+        <h3 className='btn3'>Swap, earn, stack yields, lend, borrow, leverage all on one decentralized, community driven platform. Welcome home to DeFi.
+       </h3>
+
+        <Link  to="/swap"><span className='btn' >Get Started </span>
+        
+        </Link>
+       
+        
     </div>
   )
 }

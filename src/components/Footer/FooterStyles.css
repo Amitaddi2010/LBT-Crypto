@@ -1,6 +1,10 @@
 .footer {
     text-align: center;
-	background-color: skyblue;
+	background: rgb(2,0,36);
+     
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,39,91,1) 35%);   
+    color: aliceblue;
     grid-row: 2 / -1;
     grid-column: 1 / -1;
+    opacity: .9;
 }

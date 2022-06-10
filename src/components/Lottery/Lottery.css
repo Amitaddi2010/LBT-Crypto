@@ -1,7 +1,26 @@
 .lottery{
-    background-color: aqua;
-    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    background: #202231;
+    color: rgb(83, 104, 123);
+    width: 40%;
+    align-items: center;
+    min-height: 35vh;
     text-align: center;
-    margin:auto;
-    border-radius: 16px;
+    margin:auto ;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    box-shadow: 0 35px 68px 0 rgba(0,0,0,.26), 10px 10px 70px rgba(255, 255, 255, .25), inset 5px 5px 5px 10px rgba(0,0,0,.5), inset 5px 5px 10px rgba(255,255,255,.2),inset -5px -5px 15px rgba(0,0,0,.75);
+    border-radius: 30px;
+}
+.lottery:hover{
+    outline: 1px solid rgb(117, 218, 244);
+    outline-offset: 10px;
+}
+.lottery button{
+    width: 90%;
+    height:60px;
+   
+    color: #fff;
+    background: #1f83f2;
+    border-radius: 20px;
 }

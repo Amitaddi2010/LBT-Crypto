@@ -1,30 +1,82 @@
 .nav{
+    font-family: 'Courier New', Courier, monospace;
     width: 250px;
-    padding-left: 3rem;
+    padding-left: 1rem;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-color: #656565;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,39,91,1) 35%);
     color: white;
+    
+     
 }
-
-.nav ul{
-    margin:0;
-    padding: 0;
-    list-style: none;
+ 
+.nav ul li{
+    position: relative;
+    height: 80px;
+    line-height: 60px;
+     text-align: left;
+     border-radius: 1px;
+     font-size: 1.5rem;
+     box-shadow: 10px 1px 6px 0 rgba(0,0,0,.26)
 }
 .nav li:hover{
-    background-color: pink;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(151,49,170,1) 35%);
+        border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    
 }
 .nav li:hover a{
-    color: rgb(255, 38, 74);
+    color: rgb(210, 202, 202);
 }
 .nav a{
     color: white;
     text-decoration: none;
 }
 .connect{
-    white-space: nowrap;
+  box-shadow: 10px 1px 6px 0 rgba(0,0,0,.26);
+  font-size: 1rem;
+   
   overflow: hidden;
   text-overflow: ellipsis;
-  width:50%;
+  color: rgb(246, 246, 246);
+  width:80%;
+  border-radius: 10px;
+}
+.connect:hover{
+     
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(151,49,170,1) 35%);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.icon{
+    box-shadow: 10px 1px 6px 0 rgba(0,0,0,.26);
+  
+   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(246, 246, 246);
+  width:100%;
+  height: auto;
+  font-weight: 5rem;
+    font-size: 2rem;
+  border-radius: 1px;
+}
+.icon:hover{
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
 }

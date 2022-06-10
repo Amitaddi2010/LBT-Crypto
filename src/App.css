@@ -8,7 +8,8 @@
   display: none;
 }
 .container{
-  background-color: #191919;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,39,91,1) 35%);
   grid-column: 2 / 3;
 }
 .App.Landing  .container{

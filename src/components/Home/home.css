@@ -1,0 +1,72 @@
+.btn{
+    color: rgb(2, 2, 2);
+    font-family: 'Courier New', Courier, monospace;
+    backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 1); 
+    border-radius: 35px; box-shadow: 0px 35px 68px 0px rgba(189, 107, 204, 0.5), inset 0px -12px 16px 0px rgba(189, 107, 204, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    font-weight:bold;
+    border-radius: 10px;
+    padding: auto;
+    margin-left: 45%;
+   
+    padding: 1rem ;
+    opacity: .9;
+    font-weight: 4rem;
+
+}
+.btn:hover{
+  
+    outline: 1px solid rgb(117, 218, 244);
+    outline-offset: 10px;
+}
+.landingPage img {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    clip-path: polygon(50% 0%, 100% 0, 100% 36%, 100% 70%, 81% 88%, 50% 68%, 20% 88%, 0% 70%, 0 35%, 0 0);
+
+
+}
+.btn2 {
+    
+    margin-top: 14rem;
+    color:aliceblue;
+    text-align: center;
+  font-size: 2rem;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+   
+}
+.btn2 .Token{
+
+ font-family:'Courier New', Courier, monospace;
+    animation: blinker 1s linear infinite;
+}
+.btn3{
+    margin-top: 5rem;
+    margin-bottom: 9rem;
+    color:aliceblue;
+    text-align: center;
+    
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+ 
+    
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  

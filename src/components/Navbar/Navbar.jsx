@@ -5,12 +5,15 @@ function Navbar({ handler, show, account }) {
 
   return (
     <nav className='nav'>
+      
       <div className='icon' id="myTopnav">
         <a href="/">
-          LBT Crypto
+          Home 
         </a>
       </div>
+      
       <ul>
+        
         <li><Link to="/swap">Swap</Link></li>
         <li><Link to="/lottery">Lottery</Link></li>
         <li><Link to="/team">Team</Link></li>
@@ -19,7 +22,8 @@ function Navbar({ handler, show, account }) {
         <li><Link to="/timeline">Roadmap</Link></li>
       </ul>
       <div className='connect'>Account : {account ? account : "Not Connected"}</div>
-    </nav>
+ 
+         </nav>
   )
 }
 
