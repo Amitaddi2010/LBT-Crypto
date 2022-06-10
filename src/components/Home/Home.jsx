@@ -1,15 +1,15 @@
-import {useEffect} from 'react'
+import {useLayoutEffect} from 'react'
 import {Link} from 'react-router-dom'
 import './home.css'
 import landing from '../../imgs/landing.jpg'
 
-function Home({setAppClass}) {
-    useEffect(() => {
+function Home({setAppClass, path}) {
+    useLayoutEffect(() => {
         setAppClass(true);
       return () => {
         setAppClass(false);
       }
-    }, [setAppClass])
+    }, [setAppClass, path])
     
   return (
     <div className='landingPage'>

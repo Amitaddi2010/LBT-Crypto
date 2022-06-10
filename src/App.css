@@ -7,6 +7,9 @@
 .App.Landing .nav{
   display: none;
 }
+.App.Loading .footer{
+  display: none;
+}
 .container{
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,39,91,1) 35%);
@@ -15,4 +18,9 @@
 .App.Landing  .container{
   grid-row: 1 / -1;
   grid-column: 1 / -1;
+}
+.App .loadingImage{
+  height: 100%;
+  width: 100%;
+  opacity: .5;
 }

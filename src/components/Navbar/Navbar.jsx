@@ -1,4 +1,3 @@
-import logo from '../../imgs/logo.png'
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 function Navbar({ handler, show, account }) {
