@@ -50,6 +50,7 @@ useLayoutEffect(() => {
   },[path]);
   useEffect(() => {
     loadWeb3();
+ 
     loadAccount(setAccount);
     loadContract({ setManager, setLotteryContract, setLotteryAddress });
   }, [])
@@ -68,6 +69,7 @@ useLayoutEffect(() => {
     // if no accounts that means we are not connected
     if (accounts.length === 0) {
       console.log("Please connect to metamask");
+      window.alert("Please connect to metamask");
       // our old data is not current connected account
       // currentAccount account that you already fetched and assume you stored it in useState
     } else if (accounts[0] !== account) {

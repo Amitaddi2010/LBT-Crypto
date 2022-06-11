@@ -1,7 +1,9 @@
 import './Navbar.css';
+import Web3Modal from "web3modal";
 import { Link } from 'react-router-dom';
+import {  loadWeb3 } from './../../utils/utils';
 function Navbar({ handler, show, account }) {
-
+  
   return (
     <nav className='nav'>
       

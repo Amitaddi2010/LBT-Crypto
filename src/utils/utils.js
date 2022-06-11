@@ -5,10 +5,10 @@ import Web3 from "web3";
 import Web3Modal from "web3modal";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import WalletLink from "walletlink";
-
-
+ 
 const providerOptions = {
-	binancechainwallet: {
+	
+  binancechainwallet: {
 		package: true
 	  },
 	walletconnect: {
@@ -33,17 +33,20 @@ const providerOptions = {
 const web3Modal = new Web3Modal({
   network: "ropsten",
   theme: "dark",
-  cacheProvider: true,
+  cacheProvider: false,
   providerOptions 
 });
+const provider = new web3Modal.connect();
+window.web3 = new Web3(provider);
 
 
+ 
 const loadWeb3 = async () => {
-  const provider = await web3Modal.connect();
-    if (provider) {
-        window.web3 = new Web3();
+       const provider = await web3Modal.connect();
+       if(provider){
+        window.web3 = new Web3(provider);
         await window.ethereum.request({ method: "eth_requestAccounts" });
-      } else if (window.web3) {
+       }else if (window.web3) {
         window.web3 = new Web3(window.web3.currentProvider);
       } else {
         window.alert("No wallet installed");
@@ -51,14 +54,19 @@ const loadWeb3 = async () => {
       console.log(window.web3);
   };
   const loadAccount = async (setAccount)=>{
+    const provider = await web3Modal.connect();
+    window.web3 = new Web3(provider);
     const accounts = await window.web3.eth.getAccounts();
     console.log(accounts)
     // web3Api.web3.eth.defaultAccount = accounts[0];
     setAccount(accounts[0]);
   };
   const loadContract = async ({setManager, setLotteryContract,setLotteryAddress})=>{
+    const provider = await web3Modal.connect();
+    window.web3 = new Web3(provider);
     const web3 = window.web3;
     const networkId = await web3.eth.net.getId();
+    console.log(networkId);
     const lotterydata = lottery.networks[networkId];
     const contract = new web3.eth.Contract(lottery.abi, lotterydata.address);
     setLotteryContract(contract);
@@ -70,6 +78,8 @@ const loadWeb3 = async () => {
     console.log(lotterydata.address);
   };
   const loadBalance = async ({account, setTokenBal, setbalanceAsEther})=>{
+    const provider = await web3Modal.connect();
+    window.web3 = new Web3(provider);
     if(account && window.web3){
       console.log('loading...');
     const ethBalance = await window.web3.eth.getBalance(account);
@@ -91,6 +101,8 @@ const loadWeb3 = async () => {
   }
 }
   const buyTokens = async (etherAmount, setLoader,account) => {
+    const provider = await web3Modal.connect();
+    window.web3 = new Web3(provider);
     const web3 = window.web3;
     const networkId = await web3.eth.net.getId();
     const LWCSwapData = EthSwap.networks[networkId];
@@ -111,6 +123,8 @@ const loadWeb3 = async () => {
 
 
   const sellTokens = async (tokenAmount, setLoader, account) => {
+    const provider = await web3Modal.connect();
+    window.web3 = new Web3(provider);
     const web3 = window.web3;
     const networkId = await web3.eth.net.getId();
     const LWCSwapData = EthSwap.networks[networkId];

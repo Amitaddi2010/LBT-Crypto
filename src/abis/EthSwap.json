@@ -85,7 +85,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -98,14 +99,16 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
       "name": "buy_token",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -7468,6 +7471,12 @@
     "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xec260De528B43c07734F95B86C4F48f7e81dE554",
+      "transactionHash": "0x46cfb41ed9f811211e9b916b1316dd79998026e806ff820e36b2605b05b3b1f3"
+    },
     "5777": {
       "events": {},
       "links": {},
@@ -7482,7 +7491,8 @@
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-06-11T09:32:26.991Z",
+  "updatedAt": "2022-06-11T16:53:01.923Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

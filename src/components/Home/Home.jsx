@@ -1,8 +1,7 @@
 import {useLayoutEffect} from 'react'
 import {Link} from 'react-router-dom'
 import './home.css'
-import Connect from './../../utils/utils'
-import landing from '../../imgs/landing.jpg'
+ import landing from '../../imgs/landing.jpg'
 
 function Home({setAppClass, path}) {
     useLayoutEffect(() => {
