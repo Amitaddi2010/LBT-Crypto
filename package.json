@@ -2,13 +2,15 @@
   "name": "lottery-block-token",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Amitaddi2010.github.io/LBT-Crypto",
+  "homepage": "https://lbtoken.tech/",
   "dependencies": {
+    "@coinbase/wallet-sdk": "^3.2.0",
     "@metamask/detect-provider": "^1.2.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "@truffle/hdwallet-provider": "^2.0.8",
+    "@walletconnect/web3-provider": "^1.7.8",
     "aos": "^2.3.4",
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
@@ -23,8 +25,10 @@
     "react-simple-timeline": "^1.1.6",
     "react-transition-group": "^4.4.2",
     "styled-components": "^5.3.5",
+    "walletlink": "^2.5.0",
     "web-vitals": "^2.1.4",
-    "web3": "^1.7.3"
+    "web3": "^1.7.3",
+    "web3modal": "^1.9.7"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -46,7 +46,7 @@ useLayoutEffect(() => {
     setTimeout(()=>{
       setIsLoading(false);
       console.log('loading stopped')
-    },1000);
+    },1200);
   },[path]);
   useEffect(() => {
     loadWeb3();

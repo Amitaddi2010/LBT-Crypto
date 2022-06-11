@@ -1,6 +1,7 @@
 import {useLayoutEffect} from 'react'
 import {Link} from 'react-router-dom'
 import './home.css'
+import Connect from './../../utils/utils'
 import landing from '../../imgs/landing.jpg'
 
 function Home({setAppClass, path}) {
@@ -18,7 +19,7 @@ function Home({setAppClass, path}) {
         <h3 className='btn3'>Swap, earn, stack yields, lend, borrow, leverage all on one decentralized, community driven platform. Welcome home to DeFi.
        </h3>
 
-        <Link  to="/swap"><span className='btn' >Get Started </span>
+       <Link  to="/swap"><span className='btn' >Get Started </span>
         
         </Link>
        
