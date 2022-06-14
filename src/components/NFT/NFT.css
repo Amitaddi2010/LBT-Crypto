@@ -1,25 +1,105 @@
-.svgNFT{
-    height: 260px;
-    width: 260px;
-    border-radius: 50%;
-    filter: grayscale(100%);
+.NFT
+{
+  display: contents;
+  border: 2px solid red;
+  background-color: #ccc;
+  padding: 10px;
+  width: 200px;
+
+}
+
+
+
+.nft{
+  filter: grayscale(50%);
+  color: rgb(52, 47, 47);
+  margin-top: 100px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 0.5); border-radius: 32px; box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+  font-weight:bolder;
+  padding: 6rem;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  margin-top: 2%;
+  margin-bottom: auto;
+  width: 20%;
+  opacity: .9;
+    
+}
+.nftdes{
+  text-align: center;
+
+}
+.nft-title{
+  filter: grayscale(50%);
+  color: rgb(255, 255, 255);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(100,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 10%;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  margin-top: 2%;
+  margin-bottom: 2rem;
+  width: 14%;
+  opacity: .9;
+}
+.nftbtn
+{
+  color: rgb(52, 47, 47);
+    margin-top: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(10px); background-color: rgb(242, 234, 234); 
+    border-radius: 10px;    font-weight:bolder;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    margin-top: 2%;
+    margin-bottom: 2rem;
+    width: 10%;
+    opacity: .9;
     cursor: pointer;
-    transition: 400ms;
-    margin-right: 1rem;
-}  
-.svgNFT:hover
+
+}
+.balance{
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(246, 246, 246);
+   
+}
+.nft:hover
 {
   outline: 1px solid rgb(117, 218, 244);
   outline-offset: 10px;
-    filter: grayscale(0);
-    animation: pulse 1s ease-out .4s;
+  filter: grayscale(0);
+  animation: pulse 1s ease-out .4s;
 }
-h1 {
-    font-size: 60px;
-    color: #656565;
-    margin:3rem 2rem 2rem ;
-  }
-  h1 span{
-    font-style: italic;
-    font-size: 45px;
-  }
+.nftconnect{
+  color: rgb(52, 47, 47);
+    margin-top: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(10px); background-color: rgb(242, 234, 234); 
+    border-radius: 10px;    font-weight:bolder;
+    padding: 1rem;
+    display: block;
+    margin-left: 1rem;
+    position:relative;
+    margin-top: 2%;
+    margin-bottom: 2rem;
+    width: 10%;
+    opacity: .9;
+    cursor: pointer;
+
+}
