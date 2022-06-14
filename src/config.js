@@ -1,6 +1,6 @@
 export const network = {
     chainNamespace: "eip155",
-    rpcTarget: "https://polygon-rpc.com",
+    rpcTarget: "https://polygon-mumbai.g.alchemy.com/v2/1ZHFw4C7vNtMmqs-TFdm3_1XbduaYcuE",
     blockExplorer: "https://polygonscan.com/",
     chainId: "0x13881",
     displayName: "Polygon Mainnet",
