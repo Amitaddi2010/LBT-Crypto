@@ -1,10 +1,10 @@
 .footer {
     text-align: center;
-	background: rgb(2,0,36);
-     
+    height: 100%;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,39,91,1) 35%);   
     color: aliceblue;
     grid-row: 2 / -1;
     grid-column: 1 / -1;
     opacity: .9;
+ 
 }

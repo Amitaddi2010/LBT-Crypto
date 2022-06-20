@@ -3,7 +3,9 @@
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 5fr 1fr;
-}
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(143,56,172,1) 100%);
+   }
 .App.Landing .nav{
   display: none;
 }
@@ -20,7 +22,16 @@
   grid-column: 1 / -1;
 }
 .App .loadingImage{
-  height: 100%;
-  width: 100%;
+ 
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: auto;
+  width: 20%;
   opacity: .5;
+   
+ 
+ 
 }

@@ -21,9 +21,9 @@ function Swap({ etherBalance, tokenBalance, buyTokens, sellTokens }) {
     <div className='swap'>
       <h2 className='swap-title'>LBT Swap</h2>
 
-      <div className='balance'> Balance : &nbsp; {from} &nbsp; =  &nbsp;
+      <div className='balance'> Balance  =  &nbsp;
         <span>{from === 'ETH' ? etherBalance : (tokenBalance ? window.web3.utils.fromWei(tokenBalance, "Ether") : '0')}</span>
-        <div><input className='text' type="text" placeholder="Enter Amount" value={input} onChange={(e) => {
+        &nbsp;{from}<div><input className='text' type="text" placeholder="Enter Amount" value={input} onChange={(e) => {
           setInput(e.target.value)
         }} />
         </div>
@@ -43,9 +43,9 @@ function Swap({ etherBalance, tokenBalance, buyTokens, sellTokens }) {
         animation: ''
       }} />
 
-      <div className='balance'>Balance : {to} &nbsp; = &nbsp;
+      <div className='balance'>Balance &nbsp; = &nbsp;
         <span>{to === 'ETH' ? etherBalance : (tokenBalance ? window.web3.utils.fromWei(tokenBalance, "Ether") : '0')}</span>
-        <div>
+        &nbsp; {to}  <div>
           <input className='text' type="text"  disabled value={input * multiplier} />
         </div>
       </div>

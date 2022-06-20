@@ -1,38 +1,104 @@
-import React from 'react'
+import { useEffect, useState } from "react";
+import CandleNft from './.././../abis/LBNFT.json'
+import Web3 from "web3";
+import candle1 from "./../../Assets/NFT_1.json";
+import candle2 from "./../../Assets/NFT_2.json";
+import nftDetails from "./../../Assets/nftdetails.json"
+import { Web3Auth } from "@web3auth/web3auth";
+import { network, clientId } from ".././../config";
 import './NFT.css'
-import NFT1 from './../../imgs/Nfts/bighead-1.svg'
-import NFT2 from './../../imgs/Nfts/bighead-2.svg'
-import NFT3 from './../../imgs/Nfts/bighead-3.svg'
-import NFT4 from './../../imgs/Nfts/bighead-4.svg'
-import NFT5 from './../../imgs/Nfts/bighead-5.svg'
-import NFT6 from './../../imgs/Nfts/bighead-6.svg'
-import NFT7 from './../../imgs/Nfts/bighead-7.svg'
-import NFT8 from './../../imgs/Nfts/bighead-8.svg'
-import NFT9 from './../../imgs/Nfts/bighead-9.svg'
-import NFT10 from './../../imgs/Nfts/bighead-10.svg'
  
-export default function NFT() {
+
+const allCandles = [candle1, candle2];
+function NFT() {
+  const [web3Auth, setWeb3Auth] = useState(null);
+  const [provider, setProvider] = useState(null);
+  const [web3, setWeb3] = useState(null);
+  const [account, setAccount] = useState("");
+  const [balance, setBalance] = useState("");
+
+  const buy = async (nft_id) => {
+    console.log("buying nft", nft_id);
+    const contract = new web3.eth.Contract(CandleNft.abi, nftDetails.contractAddress);
+    console.log(contract);
+    const currentCandle = allCandles.find((candle) => candle.token_id === nft_id);
+    // alert("buying candle" + JSON.stringify(currentCandle));
+    const gasEstimate = await contract.methods.awardItem(account, currentCandle.hosted_url)
+      .estimateGas({ from: account, value: web3.utils.toWei("0.011", "ether") });
+    console.log("gas estimate", gasEstimate);
+
+    await contract.methods
+      .awardItem(account, currentCandle.hosted_url)
+      .send({ from: account, maxPriorityFeePerGas: web3.utils.toWei("1", "gwei"), value: web3.utils.toWei("0.02", "ether") })
+      .on("transactionHash", (hash) => console.log(hash));
+    alert("successfully claimed");
+  };
+
+  useEffect(() => {
+    async function init() {
+      const web3AuthInstance = new Web3Auth({
+        chainConfig: network,
+        // get your client id from https://dashboard.web3auth.io
+        clientId,
+      });
+      await web3AuthInstance.initModal();
+      setWeb3Auth(web3AuthInstance);
+    }
+    init();
+  }, []);
+
+  const connect = async () => {
+    if (!web3Auth) {
+      alert("web3auth is not initialized");
+      return;
+    }
+    const provider = await web3Auth.connect();
+    setProvider(provider);
+    const web3 = new Web3(provider);
+    setWeb3(web3);
+    const accounts = await web3.eth.getAccounts();
+    console.log("accounts", accounts);
+    setAccount(accounts[0]);
+    const balance = await web3.eth.getBalance(accounts[0]);
+    console.log("balance", balance);
+    setBalance(web3.utils.fromWei(balance, "ether"));
+  };
+
+  const logout = async () => {
+    await web3Auth.logout();
+    setAccount("");
+    setBalance("");
+  };
   return (
-    <div id='NFT'>
-        <h1 className="heading1"><span>Our</span>NFT</h1>
-        
-  <marquee className='marquee' direction = "left">
-        <img alt="" className='svgNFT' src={NFT1} border= "1rem double #e8ea96" border-radius= "20%" height="250px" />
-        <img alt="" className='svgNFT' src={NFT2} border= "1rem double #e8ea96" height="250px" />
-        <img alt="" className='svgNFT' src={NFT3} border= "1rem double #e8ea96" height="250px" />
-        <img alt="" className='svgNFT' src={NFT4} border= "1rem double #e8ea96" height="250px" />
-        <img alt="" className='svgNFT' src={NFT5} border= "1rem double #e8ea96" height="250px" />
-        </marquee>
-        <marquee className='marquee' direction = "right">
-        <img alt="" className='svgNFT' src={NFT6} border= "1rem double #e8ea96" height="250px" />
-        <img alt="" className='svgNFT' src={NFT7} border= "1rem double #e8ea96" height="250px" />
-        <img alt="" className='svgNFT' src={NFT8} border= "1rem double #e8ea96" height="250px" />
-        <img alt="" className='svgNFT' src={NFT9} border= "1rem double #e8ea96" height="250px" />
-        <img alt="" className='svgNFT' src={NFT10}border= "1rem double #e8ea96" height="250px" />
-         
-        </marquee>
-    
-    
+    <div className="NFT">
+      <header className="App-header">
+        {!!account ? (
+          <>
+            <div className="balance">
+              <div>Address: {account}</div>
+              <div>Balance: {balance} ETH</div>
+            </div>
+            <div>
+              <button className="nftconnect" onClick={logout}>Logout</button>
+            </div>
+          </>
+        ) : (
+          <button className="nftconnect" onClick={connect}>Connect</button>
+        )}
+
+        {allCandles.map((x) => {
+          return (
+            <div key={x.token_id}>
+              <h2 className="nft-title">{x.name}</h2>
+              <img className="nft" src={x.image} alt="candle" />
+              <p className="nftdes">{x.description}</p>
+              <button className="nftbtn" onClick={() => buy(x.token_id)}>Buy</button>
+            </div>
+          );
+        })}
+      </header>
     </div>
-  )
+  );
 }
+
+export default NFT;
