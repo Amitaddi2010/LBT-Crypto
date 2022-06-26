@@ -78,8 +78,7 @@ const loadWeb3 = async () => {
     console.log(lotterydata.address);
   };
   const loadBalance = async ({account, setTokenBal, setbalanceAsEther})=>{
-    const provider = await web3Modal.connect();
-    window.web3 = new Web3(provider);
+     
     if(account && window.web3){
       console.log('loading...');
     const ethBalance = await window.web3.eth.getBalance(account);

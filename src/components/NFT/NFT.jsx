@@ -16,6 +16,8 @@ function NFT() {
   const [web3, setWeb3] = useState(null);
   const [account, setAccount] = useState("");
   const [balance, setBalance] = useState("");
+  const [characterNFT, setCharacterNFT] = useState(null);
+  
 
   const buy = async (nft_id) => {
     console.log("buying nft", nft_id);
@@ -69,6 +71,8 @@ function NFT() {
     setAccount("");
     setBalance("");
   };
+
+
   return (
     <div className="NFT">
       <header className="App-header">
@@ -92,7 +96,19 @@ function NFT() {
               <h2 className="nft-title">{x.name}</h2>
               <img className="nft" src={x.image} alt="candle" />
               <p className="nftdes">{x.description}</p>
-              <button className="nftbtn" onClick={() => buy(x.token_id)}>Buy</button>
+              <button className="nftbtn" onClick={() => {
+                if(account)
+                {
+                  buy(x.token_id)
+
+                }
+                else
+                {
+                  window.alert("Please Connect your wallet")
+                }
+              
+              }}
+                >Buy</button>
             </div>
           );
         })}
